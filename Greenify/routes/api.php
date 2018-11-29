@@ -17,6 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+/**
+ * Api routes
+ */
 
 Route::resource('companies','CompanyController');
 Route::resource('reviews','ReviewController');

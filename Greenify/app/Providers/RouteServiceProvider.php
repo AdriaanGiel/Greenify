@@ -58,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * Define the "api" routes for the application.
+     * Added the admin routes
      *
      * These routes are typically stateless.
      *

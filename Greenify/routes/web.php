@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/**
+ * Test routes to check if everything is working
+ */
+
 Route::resource('companies','CompanyController')->only(['index','show']);
 Route::resource('reviews','ReviewController')->only(['index','show']);
 Route::resource('categories','CategoryController')->only(['index','show']);

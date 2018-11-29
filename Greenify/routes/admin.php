@@ -1,7 +1,8 @@
 <?php
 
-
-
+/**
+ * Admin routes
+ */
 Route::resource('companies','CompanyController');
 Route::resource('reviews','ReviewController');
 Route::resource('categories','CategoryController');
