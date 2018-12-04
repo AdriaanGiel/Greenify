@@ -11,7 +11,7 @@ folders:
         to: /home/vagrant/code
 sites:
     -
-        map: cheaplife.test
+        map: greenify.test
         to: /home/vagrant/code/Greenify/public
 databases:
     - greenify

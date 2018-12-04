@@ -1,2 +1,43 @@
 # Greenify
 App to live cheap and green
+
+# Installatie instructies
+### Met Vagrant
+Pas eerst de homestead.yaml bestand aan als dat nodig is.
+
+Voeg dan de url aan je hosts
+
+voorbeeld:
+"192.168.10.10	greenify.test"
+
+Run daarna "vagrant up"
+
+Als dat klaar is run "vagrant ssh" om in de virtuele machine te komen. Eenmaal in de machine
+cd in de map greenify. 
+
+Als je in de map greenify bent run "composer install".
+
+Kopieer de inhoud van .env.example naar een nieuw bestand genaamd .env en plaats daar al de juiste data in. 
+
+Daarna kan je de migraties pushen naar de database door "php artisan migrate --seed" te runnen
+
+Als dat klaar is run "npm install"
+In windows wordt dat "yarn install --no-bin-links"
+
+run daarna "npm run dev" of "yarn dev" om de css en js te compilen
+
+### Zonder vagrant
+Plaats project map in www map van wamp
+Maak een database aan die je kan koppelen aan je project
+
+cd in de greenify map en run "composer install"
+
+Kopieer de inhoud van .env.example naar een nieuw bestand genaamd .env en plaats daar al de juiste data in. 
+
+Daarna kan je de migraties pushen naar de database door "php artisan migrate --seed" te runnen
+
+Als dat klaar is run "npm install"
+In windows wordt dat "yarn install --no-bin-links"
+
+run daarna "npm run dev" of "yarn dev" om de css en js te compilen
+
