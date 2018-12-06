@@ -27,7 +27,10 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->all();
+        $role = Role::firstOrCreate($data);
 
+        return response()->json($role);
     }
 
     /**

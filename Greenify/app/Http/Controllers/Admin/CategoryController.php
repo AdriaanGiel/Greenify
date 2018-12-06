@@ -27,7 +27,9 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->all();
 
+        return response()->json(Category::create($data));
     }
 
     /**
@@ -51,7 +53,13 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+
+        $category = Category::findOrFail($request->input('id'));
+
+        $category->update($data);
+
+
     }
 
     /**

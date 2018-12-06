@@ -27,7 +27,10 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->all();
+        $tag = Tag::firstOrCreate($data);
 
+        return response()->json($tag);
     }
 
     /**
