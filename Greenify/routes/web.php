@@ -11,9 +11,9 @@
 |
 */
 // TODO FIX VUE HISTORY MODE
-//Route::get('{all}', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 /**
  * Test routes to check if everything is working

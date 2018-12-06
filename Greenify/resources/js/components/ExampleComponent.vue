@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container test">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card card-default">
@@ -21,3 +21,16 @@
         }
     }
 </script>
+
+
+<style lang="scss">
+
+    .test{
+        background-color: #1c7430;
+        .row{
+            background-color: red;
+            opacity: .5;
+        }
+    }
+
+</style>

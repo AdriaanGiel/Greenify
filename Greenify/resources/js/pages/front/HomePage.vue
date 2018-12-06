@@ -1,10 +1,17 @@
 <template>
-    
+    <div>
+        <example></example>
+    </div>
 </template>
 
 <script>
+    import Example from '../../components/ExampleComponent';
+
     export default {
-        name: "HomePage"
+        name: "HomePage",
+        components:{
+            "example": Example
+        }
     }
 </script>
 
