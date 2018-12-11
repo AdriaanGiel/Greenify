@@ -1,7 +1,7 @@
 # Greenify
 App to live cheap and green
 
-# Installatie instructies
+## Installatie instructies
 ### Met Vagrant
 Pas eerst de homestead.yaml bestand aan als dat nodig is.
 
@@ -13,6 +13,12 @@ voorbeeld:
 ```
 
 Run daarna 
+
+```
+composer install
+```
+
+Run daarna
 
 ```
 vagrant up
@@ -54,6 +60,7 @@ yarn dev
 ### Zonder vagrant
 Plaats project map in www map van wamp
 Maak een database aan die je kan koppelen aan je project
+note: Zorg dat je de laatste versie heb van PHP
 
 cd in de greenify map en run: 
 ```

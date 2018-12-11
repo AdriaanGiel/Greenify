@@ -16635,7 +16635,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.test {\n  background-color: #1c7430;\n}\n.test .row {\n    background-color: red;\n    opacity: .5;\n}\n", ""]);
+exports.push([module.i, "\n.test {\n  background-color: #1c7430;\n}\n.test .row {\n    background-color: red;\n    opacity: .5;\n}\n.test .row .card-body {\n      background-color: yellow;\n      opacity: .5;\n}\n", ""]);
 
 // exports
 

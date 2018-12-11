@@ -30,6 +30,10 @@
         .row{
             background-color: red;
             opacity: .5;
+            .card-body{
+                background-color: yellow;
+                opacity: .5;
+            }
         }
     }
 

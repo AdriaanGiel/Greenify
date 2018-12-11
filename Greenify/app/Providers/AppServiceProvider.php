@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Dotenv\Dotenv;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

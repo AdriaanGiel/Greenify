@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="og:type" content="website">
+
+        {{--<meta property="og:url" content="">--}}
+        {{--<meta property="og:site_name" content="ELDE">--}}
+        {{--<meta property="canonical" content="">--}}
+        {{--<meta property="keyword" content="">--}}
 
         <title>Laravel</title>
 
