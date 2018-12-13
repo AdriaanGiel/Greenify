@@ -1,164 +1,100 @@
 import VueRouter from 'vue-router';
 
+import Home from '../components/views/Home'
+import About from '../components/views/About'
+import Register from '../components/views/Register'
+import Login from '../components/views/Login'
+import Dashboard from '../components/views/Dashboard'
+import Food from '../components/views/Food'
+import Transport from '../components/views/Transport'
+import Shop from '../components/views/Shop'
+import Detail from '../components/views/Detail'
+
 let routes = [
     {
         path: '/',
-        component: require('../pages/front/HomePage'),
+        component: Home,
         meta: {
-            title: "Overzicht",
+            title: "Greenify - Home",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De overzicht pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De overzicht pagina voor Greenify"
-                }
+                { name: "description", content: "De overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De overzicht pagina voor Greenify" }
             ]
         }
     },
     {
-        path: '/home',
-        component: require('../pages/front/HomePage'),
-        meta: {
-            title: "Overzicht",
-            metaTags: [
-                {
-                    name: "description",
-                    content: "De overzicht pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De overzicht pagina voor Greenify"
-                }
-            ]
-        }
+        path: '/over-ons',
+        component: About
     },
     {
-        path: '/registratie',
-        component: require('../pages/front/RegisterPage'),
+        path: '/registreren',
+        component: Register,
         meta: {
             title: "Registreren",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De registratie pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De registratie pagina voor Greenify"
-                }
+                { name: "description", content: "De registrate pagina voor Greenify" }
             ]
         }
-
     },
     {
         path: '/login',
-        component: require('../pages/front/LoginPage'),
+        component: Login,
         meta: {
             title: "Inloggen",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De login pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De login pagina voor Greenify"
-                }
+                { name: "description", content: "De login pagina voor Greenify" },
+                { property: "og:description", content: "De login pagina voor Greenify"}
             ]
         }
     },
     {
-        path: '/uitleg',
-        component: require('../pages/front/AboutPage'),
-        meta: {
-            title: "Over Greenify",
-            metaTags: [
-                {
-                    name: "description",
-                    content: "De over ons pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De over ons pagina voor Greenify"
-                }
-            ]
-        }
-    },
-    {
-        path: '/user/overzicht',
-        component: require('../pages/front/DashboardPage'),
+        path: '/gebruiker/overzicht',
+        component: Dashboard,
         meta: {
             title: "Gebruiker overzicht",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De gebruiker overzicht pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De gebruiker overzicht pagina voor Greenify"
-                }
+                { name: "description", content: "De gebruiker overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De gebruiker overzicht pagina voor Greenify" }
             ]
         }
     },
     {
         path: '/eten',
-        component: require('../pages/front/FoodPage'),
+        component: Food,
         meta: {
             title: "Eten overzicht",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De eten overzicht pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De eten overzicht pagina voor Greenify"
-                }
+                { name: "description", content: "De eten overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De eten overzicht pagina voor Greenify" }
             ]
         }
     },
     {
         path: '/vervoer',
-        component: require('../pages/front/TransportPage'),
+        component: Transport,
         meta: {
-            title: "Vervoer overzicht",
+            title: "Eten overzicht",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De vervoer overzicht pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De vervoer overzicht pagina voor Greenify"
-                }
+                { name: "description", content: "De vervoer overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De vervoer overzicht pagina voor Greenify" }
             ]
         }
     },
     {
         path: '/winkel',
-        component: require('../pages/front/StorePage'),
+        component: Shop,
         meta: {
             title: "Winkels overzicht",
             metaTags: [
-                {
-                    name: "description",
-                    content: "De winkels overzicht pagina voor Greenify"
-                },
-                {
-                    property: "og:description",
-                    content: "De winkels overzicht pagina voor Greenify"
-                }
+                { name: "description", content: "De winkels overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De winkels overzicht pagina voor Greenify" }
             ]
         }
     },
     {
         path: '/:category/:slug',
-        component: require('../pages/front/DetailPage'),
-    },
+        component: Detail
+    }
 ];
 
 
