@@ -10,12 +10,11 @@ require('./bootstrap');
 // window.Vue = require('vue');
 // Vue.use(require('vue-router'));
 
-import routes from './routes/routes';
-
-
-
+import routes from './routes/routes'
+import PageWrapper from './components/layout/PageWrapper'
 
 const app = new Vue({
+    components: {PageWrapper},
     el: '#app',
     router: routes
 });

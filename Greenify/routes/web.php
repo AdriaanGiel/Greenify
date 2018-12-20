@@ -11,14 +11,13 @@
 |
 */
 // TODO FIX VUE HISTORY MODE
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/{any}', function () {
+    return view('app');
+})->where('any', '.*');
 
 /**
  * Test routes to check if everything is working
  */
-
 Route::resource('companies','CompanyController')->only(['index','show']);
 Route::resource('reviews','ReviewController')->only(['index','show']);
 Route::resource('categories','CategoryController')->only(['index','show']);
