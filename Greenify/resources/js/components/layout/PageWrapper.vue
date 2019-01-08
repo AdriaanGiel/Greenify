@@ -93,6 +93,7 @@
         .content{
             min-height: 100vh;
         }
+
     }
     .top{
         position: fixed;

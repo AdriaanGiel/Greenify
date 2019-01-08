@@ -44,12 +44,15 @@
                     backgroundColor: this.color,
                     color: this.fontColor
                 },
-                state: ''
+                state: 'slideOutUp animated faster hidden'
             }
         },
         methods:{
             closeMenu(){
                 this.state = 'slideOutUp animated faster';
+            },
+            openMenu(){
+                this.state = 'slideInDown animated faster'
             }
         }
     }
@@ -61,7 +64,10 @@
     position: absolute;
     height: 100%;
     width: 100%;
-
+    z-index: 8;
+    &.hidden{
+        display: none;
+    }
     .menu-title{
         margin: 0;
         font-size: 3rem;
