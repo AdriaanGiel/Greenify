@@ -17582,7 +17582,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -17599,9 +17599,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "CategoryPage"
+    name: "CategoryPage",
+    props: {
+        title: String
+    }
 });
 
 /***/ }),
@@ -17612,7 +17617,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("page-wrapper", { attrs: { color: "blue" } })
+  return _c("page-wrapper", { attrs: { color: "blue" } }, [
+    _c("div", { attrs: { slot: "top-content" }, slot: "top-content" }, [
+      _c("h1", [_vm._v(_vm._s(_vm.title))])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
