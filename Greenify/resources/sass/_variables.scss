@@ -18,3 +18,8 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$smartPhoneWidth: 1085px;
+$smartPhone: "only screen and (max-width: " + $smartPhoneWidth + ")";
+$smartPhonePortrait: "only screen and (max-width: " + $smartPhoneWidth + ") and (orientation : portrait)";
+$smartPhoneLandscape: "only screen and (max-width: " + $smartPhoneWidth + ") and (orientation : landscape)";

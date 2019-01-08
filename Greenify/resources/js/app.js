@@ -4,17 +4,15 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
 require('./bootstrap');
 
-// window.Vue = require('vue');
-// Vue.use(require('vue-router'));
 
 import routes from './routes/routes'
 import PageWrapper from './components/layout/PageWrapper'
 
+Vue.component("page-wrapper",PageWrapper);
+
 const app = new Vue({
-    components: {PageWrapper},
     el: '#app',
     router: routes
 });
