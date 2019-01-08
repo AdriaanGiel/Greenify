@@ -48,7 +48,7 @@ let routes = [
         }
     },
     {
-        path: '/gebruiker/overzicht',
+        path: '/dashboard',
         component: Dashboard,
         meta: {
             title: "Gebruiker overzicht",

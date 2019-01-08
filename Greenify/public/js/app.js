@@ -16259,7 +16259,7 @@ var routes = [{
         metaTags: [{ name: "description", content: "De login pagina voor Greenify" }, { property: "og:description", content: "De login pagina voor Greenify" }]
     }
 }, {
-    path: '/gebruiker/overzicht',
+    path: '/dashboard',
     component: __WEBPACK_IMPORTED_MODULE_5__components_views_Dashboard___default.a,
     meta: {
         title: "Gebruiker overzicht",
@@ -16484,7 +16484,7 @@ var content = __webpack_require__(43);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("850dfa70", content, false, {});
+var update = __webpack_require__(3)("0ba4f368", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -16688,7 +16688,7 @@ var content = __webpack_require__(50);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("5a4fd8c2", content, false, {});
+var update = __webpack_require__(3)("1735ebc8", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -16827,7 +16827,7 @@ var content = __webpack_require__(55);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("051b81f2", content, false, {});
+var update = __webpack_require__(3)("74a75126", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -16956,7 +16956,7 @@ var content = __webpack_require__(60);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("1515ff4b", content, false, {});
+var update = __webpack_require__(3)("a1a99eb6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17085,7 +17085,7 @@ var content = __webpack_require__(65);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("60b8c4e9", content, false, {});
+var update = __webpack_require__(3)("c07c8d7a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17109,7 +17109,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -17120,7 +17120,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -17142,7 +17141,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("page-wrapper", { attrs: { color: "blue" } })
+  return _c("page-wrapper", { attrs: { "bottom-color": "blue" } }, [
+    _c("div", { attrs: { slot: "top-content" }, slot: "top-content" }, [
+      _c("h1", [_vm._v("Hello")])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -17216,7 +17219,7 @@ var content = __webpack_require__(70);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("3ea572d0", content, false, {});
+var update = __webpack_require__(3)("2ad7ae36", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17347,7 +17350,7 @@ var content = __webpack_require__(75);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("c2b13fbe", content, false, {});
+var update = __webpack_require__(3)("449f570a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17477,7 +17480,7 @@ var content = __webpack_require__(80);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("5910fce3", content, false, {});
+var update = __webpack_require__(3)("45433849", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17608,7 +17611,7 @@ var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("566aa4ac", content, false, {});
+var update = __webpack_require__(3)("7d5ba790", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17739,7 +17742,7 @@ var content = __webpack_require__(90);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(3)("14d218e8", content, false, {});
+var update = __webpack_require__(3)("0f159448", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -17774,8 +17777,6 @@ exports.push([module.i, "\n.backgroundImage[data-v-4070fcec] {\n  background-pos
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
