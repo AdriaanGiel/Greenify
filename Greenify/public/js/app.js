@@ -16399,12 +16399,6 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_IntroHeading__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_IntroHeading___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layout_IntroHeading__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_HamburgerMenu__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_HamburgerMenu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__layout_HamburgerMenu__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__layout_NavigationBar__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__layout_NavigationBar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__layout_NavigationBar__);
 //
 //
 //
@@ -16415,126 +16409,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "Home",
-    components: { IntroHeading: __WEBPACK_IMPORTED_MODULE_0__layout_IntroHeading___default.a, hamMenu: __WEBPACK_IMPORTED_MODULE_1__layout_HamburgerMenu___default.a, navigationBar: __WEBPACK_IMPORTED_MODULE_2__layout_NavigationBar___default.a },
-    methods: {
-        open: function open() {
-            this.$refs.hamMenu.openMenu();
-        }
-    }
+    name: "Home"
 });
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(42)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(45)
-/* template */
-var __vue_template__ = __webpack_require__(46)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-70b9fd60"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/layout/IntroHeading.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-70b9fd60", Component.options)
-  } else {
-    hotAPI.reload("data-v-70b9fd60", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(43);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("850dfa70", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-70b9fd60\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./IntroHeading.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-70b9fd60\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./IntroHeading.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.intro-heading[data-v-70b9fd60] {\n  text-transform: uppercase;\n}\n.intro-heading h1[data-v-70b9fd60] {\n    font-weight: 900;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 41 */,
+/* 42 */,
+/* 43 */,
 /* 44 */
 /***/ (function(module, exports) {
 
@@ -16568,48 +16451,8 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 45 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['title', 'subtitle']
-});
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "intro-heading" }, [
-    _c("h1", [_vm._v(_vm._s(_vm.title))]),
-    _vm._v(" "),
-    _c("h2", [_vm._v(_vm._s(_vm.subtitle))])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-70b9fd60", module.exports)
-  }
-}
-
-/***/ }),
+/* 45 */,
+/* 46 */,
 /* 47 */,
 /* 48 */,
 /* 49 */,
@@ -16623,390 +16466,13 @@ if (false) {
 /* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(48)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(50)
-/* template */
-var __vue_template__ = __webpack_require__(51)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-167c4e0e"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/layout/HamburgerMenu.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-167c4e0e", Component.options)
-  } else {
-    hotAPI.reload("data-v-167c4e0e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("page-wrapper", {
+    attrs: { "bottom-color": "green", "picture-position": "bottom 2em" }
   })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(49);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("6010a84f", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-167c4e0e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HamburgerMenu.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-167c4e0e\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HamburgerMenu.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.ham-menu[data-v-167c4e0e] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  z-index: 8;\n}\n.ham-menu.hidden[data-v-167c4e0e] {\n    display: none;\n}\n.ham-menu .menu-title[data-v-167c4e0e] {\n    margin: 0;\n    font-size: 3rem;\n}\n.ham-menu .menu-title-box[data-v-167c4e0e] {\n    padding: .5em 1em;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.ham-menu .menu-title-box span[data-v-167c4e0e] {\n      padding: .35em;\n      font-size: 2rem;\n}\n.menu-items[data-v-167c4e0e] {\n  list-style: none;\n  padding-left: 1em;\n}\n.menu-items .menu-item[data-v-167c4e0e] {\n    margin: 0;\n    padding: .1em 0;\n    font-size: 2.3rem;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "HamburgerMenu",
-    props: {
-        color: {
-            type: String,
-            default: 'green'
-        },
-        title: {
-            type: String,
-            default: 'Menu'
-        },
-        items: {
-            type: Array
-        },
-        fontColor: {
-            type: String,
-            default: 'white'
-        }
-    },
-    data: function data() {
-        return {
-            bColor: {
-                backgroundColor: this.color,
-                color: this.fontColor
-            },
-            state: 'slideOutUp animated faster hidden'
-        };
-    },
-
-    methods: {
-        closeMenu: function closeMenu() {
-            this.state = 'slideOutUp animated faster';
-        },
-        openMenu: function openMenu() {
-            this.state = 'slideInDown animated faster';
-        }
-    }
-});
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "ham-menu", class: _vm.state, style: _vm.bColor },
-    [
-      _c("div", { staticClass: "menu-title-box" }, [
-        _c("h2", { staticClass: "menu-title" }, [
-          _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
-        ]),
-        _vm._v(" "),
-        _c("span", { on: { click: _vm.closeMenu } }, [
-          _c("i", { staticClass: "fas fa-times" })
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "ul",
-        { staticClass: "menu-items" },
-        _vm._l(_vm.items, function(item) {
-          return _c("li", { staticClass: "menu-item" }, [
-            _vm._v("\n           " + _vm._s(item) + "\n       ")
-          ])
-        })
-      )
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-167c4e0e", module.exports)
-  }
-}
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(108)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(55)
-/* template */
-var __vue_template__ = __webpack_require__(56)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-78715ee5"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/layout/NavigationBar.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-78715ee5", Component.options)
-  } else {
-    hotAPI.reload("data-v-78715ee5", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 53 */,
-/* 54 */,
-/* 55 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "NavigationBar",
-    props: {
-        title: {
-            type: String,
-            default: ''
-        },
-        menu: {
-            type: Boolean,
-            default: true
-        },
-        back: {
-            type: Boolean,
-            default: true
-        },
-        fontColor: {
-            type: String,
-            default: 'white'
-        },
-        color: {
-            type: String,
-            default: 'green'
-        }
-    },
-    data: function data() {
-        return {
-            navStyle: {
-                backgroundColor: this.color,
-                bFontColor: this.fontColor
-            }
-        };
-    }
-});
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "navbar", style: _vm.navStyle }, [
-    _c("div", { staticClass: "left-icon" }, [
-      _vm.back
-        ? _c("i", {
-            staticClass: "fas fa-arrow-left",
-            on: {
-              click: function($event) {
-                _vm.$router.go(-1)
-              }
-            }
-          })
-        : _vm._e()
-    ]),
-    _vm._v(" "),
-    _vm.title
-      ? _c("h2", { staticClass: "title" }, [
-          _vm._v("\n        " + _vm._s(_vm.title) + "\n    ")
-        ])
-      : _vm._e(),
-    _vm._v(" "),
-    _c("div", { staticClass: "right" }, [
-      _vm.menu
-        ? _c("i", {
-            staticClass: "fas fa-align-justify",
-            on: {
-              click: function($event) {
-                _vm.$emit("openMenu")
-              }
-            }
-          })
-        : _vm._e()
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-78715ee5", module.exports)
-  }
-}
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "page-wrapper",
-    {
-      attrs: {
-        "bottom-fixed": false,
-        "bottom-color": "green",
-        "picture-position": "bottom 2em"
-      }
-    },
-    [
-      _c("navigation-bar", {
-        attrs: { title: "Home" },
-        on: { openMenu: _vm.open }
-      })
-    ],
-    1
-  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -17145,7 +16611,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("page-wrapper", { attrs: { "bottom-color": "blue" } })
+  return _c("page-wrapper", { attrs: { color: "blue" } })
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -18155,7 +17621,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.backgroundImage[data-v-4070fcec] {\n  background-position: center;\n  background-repeat: no-repeat;\n}\n@media only screen and (max-width: 1085px) {\n.backgroundImage[data-v-4070fcec] {\n      background-size: cover;\n      /* Resize the background image to cover the entire container */\n}\n}\n.page-wrapper[data-v-4070fcec] {\n  height: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] {\n    min-height: 100vh;\n}\n.page-wrapper .content[data-v-4070fcec] :nth-child(0) {\n      position: absolute;\n}\n.top[data-v-4070fcec] {\n  position: fixed;\n  height: 65vh;\n  width: 100%;\n}\n@media only screen and (max-width: 700px) {\n.top[data-v-4070fcec] {\n      height: 58vh;\n}\n}\n.top .top-content[data-v-4070fcec] {\n    height: 80%;\n    padding: 1em;\n}\n.bottom[data-v-4070fcec] {\n  position: fixed;\n  min-height: 55vh;\n  top: 50vh;\n  width: 100%;\n}\n.bottom.not-fixed[data-v-4070fcec] {\n    position: absolute;\n    min-height: 50%;\n}\n.bottom .bottom-content[data-v-4070fcec] {\n    position: absolute;\n    left: 0;\n    z-index: 5;\n    min-height: inherit;\n    width: inherit;\n}\n.skew[data-v-4070fcec] {\n  z-index: 2;\n  -webkit-transform: skewY(-5deg);\n          transform: skewY(-5deg);\n  height: 40vh;\n}\n@media only screen and (max-width: 1085px) {\n.skew[data-v-4070fcec] {\n      -webkit-transform: skewY(-10deg);\n              transform: skewY(-10deg);\n      height: 40vh;\n}\n}\n", ""]);
+exports.push([module.i, "\n.backgroundImage[data-v-4070fcec] {\n  background-position: center;\n  background-repeat: no-repeat;\n}\n@media only screen and (max-width: 1085px) {\n.backgroundImage[data-v-4070fcec] {\n      background-size: cover;\n      /* Resize the background image to cover the entire container */\n}\n}\n.page-wrapper[data-v-4070fcec] {\n  height: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] {\n    min-height: 100vh;\n    width: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] :first-child {\n      height: 100%;\n      max-width: 100vw;\n      position: relative;\n}\n.top[data-v-4070fcec] {\n  position: fixed;\n  height: 65vh;\n  width: 100%;\n}\n@media only screen and (max-width: 700px) {\n.top[data-v-4070fcec] {\n      height: 58vh;\n}\n}\n.top .top-content[data-v-4070fcec] {\n    height: 80%;\n    padding: 1em;\n}\n.bottom[data-v-4070fcec] {\n  position: fixed;\n  min-height: 55vh;\n  top: 50vh;\n  width: 100%;\n}\n.bottom.not-fixed[data-v-4070fcec] {\n    position: absolute;\n    min-height: 50%;\n}\n.bottom .bottom-content[data-v-4070fcec] {\n    position: absolute;\n    left: 0;\n    z-index: 5;\n    min-height: inherit;\n    width: inherit;\n}\n.skew[data-v-4070fcec] {\n  z-index: 2;\n  -webkit-transform: skewY(-5deg);\n          transform: skewY(-5deg);\n  height: 40vh;\n}\n@media only screen and (max-width: 1085px) {\n.skew[data-v-4070fcec] {\n      -webkit-transform: skewY(-10deg);\n              transform: skewY(-10deg);\n      height: 40vh;\n}\n}\n", ""]);
 
 // exports
 
@@ -18166,6 +17632,8 @@ exports.push([module.i, "\n.backgroundImage[data-v-4070fcec] {\n  background-pos
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -18278,7 +17746,7 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "content" }, [_vm._t("default")], 2)
+    _c("div", { staticClass: "content" }, [_c("div", [_vm._t("default")], 2)])
   ])
 }
 var staticRenderFns = []
@@ -18296,50 +17764,6 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(109);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(3)("5910b893", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-78715ee5\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavigationBar.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-78715ee5\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./NavigationBar.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.navbar[data-v-78715ee5] {\n  width: 100%;\n  position: relative;\n  height: 3em;\n  background-color: red;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.navbar h2[data-v-78715ee5] {\n    margin: 0;\n    text-align: center;\n}\n.navbar div[data-v-78715ee5] {\n    padding: 1rem;\n    font-size: 1.4rem;\n}\n", ""]);
-
-// exports
-
 
 /***/ })
 /******/ ]);
