@@ -14,7 +14,9 @@
         </div>
 
         <div class="content">
-            <slot></slot>
+            <div>
+                <slot></slot>
+            </div>
         </div>
 
     </div>
@@ -92,6 +94,12 @@
         height: 100%;
         .content{
             min-height: 100vh;
+            width: 100%;
+            :first-child{
+                height: 100%;
+                max-width: 100vw;
+                position: relative;
+            }
         }
     }
     .top{
