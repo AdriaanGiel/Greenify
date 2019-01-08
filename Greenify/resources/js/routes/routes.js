@@ -5,10 +5,8 @@ import About from '../components/views/About'
 import Register from '../components/views/Register'
 import Login from '../components/views/Login'
 import Dashboard from '../components/views/Dashboard'
-import Food from '../components/views/Food'
-import Transport from '../components/views/Transport'
-import Shop from '../components/views/Shop'
 import Detail from '../components/views/Detail'
+import Category from '../components/views/Category'
 
 let routes = [
     {
@@ -59,35 +57,13 @@ let routes = [
         }
     },
     {
-        path: '/eten',
-        component: Food,
+        path: '/categorie/:category',
+        component: Category,
         meta: {
-            title: "Eten overzicht",
+            title: "Categorieen overzicht",
             metaTags: [
-                { name: "description", content: "De eten overzicht pagina voor Greenify" },
-                { property: "og:description", content: "De eten overzicht pagina voor Greenify" }
-            ]
-        }
-    },
-    {
-        path: '/vervoer',
-        component: Transport,
-        meta: {
-            title: "Eten overzicht",
-            metaTags: [
-                { name: "description", content: "De vervoer overzicht pagina voor Greenify" },
-                { property: "og:description", content: "De vervoer overzicht pagina voor Greenify" }
-            ]
-        }
-    },
-    {
-        path: '/winkel',
-        component: Shop,
-        meta: {
-            title: "Winkels overzicht",
-            metaTags: [
-                { name: "description", content: "De winkels overzicht pagina voor Greenify" },
-                { property: "og:description", content: "De winkels overzicht pagina voor Greenify" }
+                { name: "description", content: "De categorieen overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De categorieen overzicht pagina voor Greenify" }
             ]
         }
     },
