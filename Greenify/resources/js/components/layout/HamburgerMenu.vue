@@ -1,11 +1,11 @@
 <template>
-    <div class="ham-menu" :style="bColor">
+    <div class="ham-menu" :class="state" :style="bColor">
         <div class="menu-title-box">
             <h2 class="menu-title">
                 {{ title }}
             </h2>
 
-            <span>CLOSE</span>
+            <span @click="closeMenu"><i class="fas fa-times"></i></span>
         </div>
 
 
@@ -43,7 +43,13 @@
                 bColor: {
                     backgroundColor: this.color,
                     color: this.fontColor
-                }
+                },
+                state: ''
+            }
+        },
+        methods:{
+            closeMenu(){
+                this.state = 'slideOutUp animated faster';
             }
         }
     }
@@ -58,6 +64,7 @@
 
     .menu-title{
         margin: 0;
+        font-size: 3rem;
     }
 
     .menu-title-box{
@@ -67,12 +74,19 @@
         justify-content: space-between;
         span{
             padding: .35em;
+            font-size: 2rem;
         }
     }
 }
 
 .menu-items{
     list-style: none;
+    padding-left: 1em;
+    .menu-item{
+        margin: 0;
+        padding: .1em 0;
+        font-size: 2.3rem;
+    }
 }
 
 </style>

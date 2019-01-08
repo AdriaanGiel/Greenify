@@ -16680,7 +16680,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.ham-menu[data-v-167c4e0e] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n}\n.ham-menu .menu-title[data-v-167c4e0e] {\n    margin: 0;\n}\n.ham-menu .menu-title-box[data-v-167c4e0e] {\n    padding: .5em 1em;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.ham-menu .menu-title-box span[data-v-167c4e0e] {\n      padding: .35em;\n}\n.menu-items[data-v-167c4e0e] {\n  list-style: none;\n}\n", ""]);
+exports.push([module.i, "\n.ham-menu[data-v-167c4e0e] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n}\n.ham-menu .menu-title[data-v-167c4e0e] {\n    margin: 0;\n    font-size: 3rem;\n}\n.ham-menu .menu-title-box[data-v-167c4e0e] {\n    padding: .5em 1em;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.ham-menu .menu-title-box span[data-v-167c4e0e] {\n      padding: .35em;\n      font-size: 2rem;\n}\n.menu-items[data-v-167c4e0e] {\n  list-style: none;\n  padding-left: 1em;\n}\n.menu-items .menu-item[data-v-167c4e0e] {\n    margin: 0;\n    padding: .1em 0;\n    font-size: 2.3rem;\n}\n", ""]);
 
 // exports
 
@@ -16736,8 +16736,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             bColor: {
                 backgroundColor: this.color,
                 color: this.fontColor
-            }
+            },
+            state: ''
         };
+    },
+
+    methods: {
+        closeMenu: function closeMenu() {
+            this.state = 'slideOutUp animated faster';
+        }
     }
 });
 
@@ -16749,25 +16756,31 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "ham-menu", style: _vm.bColor }, [
-    _c("div", { staticClass: "menu-title-box" }, [
-      _c("h2", { staticClass: "menu-title" }, [
-        _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
+  return _c(
+    "div",
+    { staticClass: "ham-menu", class: _vm.state, style: _vm.bColor },
+    [
+      _c("div", { staticClass: "menu-title-box" }, [
+        _c("h2", { staticClass: "menu-title" }, [
+          _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
+        ]),
+        _vm._v(" "),
+        _c("span", { on: { click: _vm.closeMenu } }, [
+          _c("i", { staticClass: "fas fa-times" })
+        ])
       ]),
       _vm._v(" "),
-      _c("span", [_vm._v("CLOSE")])
-    ]),
-    _vm._v(" "),
-    _c(
-      "ul",
-      { staticClass: "menu-items" },
-      _vm._l(_vm.items, function(item) {
-        return _c("li", { staticClass: "menu-item" }, [
-          _vm._v("\n           " + _vm._s(item) + "\n       ")
-        ])
-      })
-    )
-  ])
+      _c(
+        "ul",
+        { staticClass: "menu-items" },
+        _vm._l(_vm.items, function(item) {
+          return _c("li", { staticClass: "menu-item" }, [
+            _vm._v("\n           " + _vm._s(item) + "\n       ")
+          ])
+        })
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -16799,8 +16812,8 @@ var render = function() {
     [
       _c("ham-menu", {
         attrs: {
-          title: "menu",
-          items: ["home", "profiel", "uitloggen"],
+          title: "MENU",
+          items: ["HOME", "MIJN PROFIEL", "UITLOGGEN"],
           color: "red"
         }
       })

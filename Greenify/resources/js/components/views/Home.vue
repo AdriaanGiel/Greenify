@@ -2,7 +2,7 @@
 
     <page-wrapper :bottom-fixed="false"  bottom-color="green" picture-position="bottom 2em" >
 
-        <ham-menu title="menu" :items="['home','profiel','uitloggen']" color="red"></ham-menu>
+        <ham-menu title="MENU" :items="['HOME','MIJN PROFIEL','UITLOGGEN']" color="red"></ham-menu>
 
         <!--<div slot="top-content">-->
             <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi aspernatur atque beatae culpa fuga fugiat maiores modi molestias nostrum perspiciatis placeat quam quod rerum, sed sunt tenetur velit?</p>-->
