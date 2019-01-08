@@ -92,7 +92,7 @@
         height: 100%;
         .content{
             min-height: 100vh;
-            :nth-child(n){
+            :nth-child(0){
                 position: absolute;
             }
         }
