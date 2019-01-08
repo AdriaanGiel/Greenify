@@ -16680,7 +16680,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.ham-menu[data-v-167c4e0e] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n}\n.ham-menu .menu-title[data-v-167c4e0e] {\n    margin-top: 0;\n}\n.ham-menu .menu-title-box[data-v-167c4e0e] {\n    padding: .5em 1em;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.menu-items[data-v-167c4e0e] {\n  list-style: none;\n}\n", ""]);
+exports.push([module.i, "\n.ham-menu[data-v-167c4e0e] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n}\n.ham-menu .menu-title[data-v-167c4e0e] {\n    margin: 0;\n}\n.ham-menu .menu-title-box[data-v-167c4e0e] {\n    padding: .5em 1em;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-flow: row wrap;\n            flex-flow: row wrap;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}\n.ham-menu .menu-title-box span[data-v-167c4e0e] {\n      padding: .35em;\n}\n.menu-items[data-v-167c4e0e] {\n  list-style: none;\n}\n", ""]);
 
 // exports
 
@@ -16714,11 +16714,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "HamburgerMenu",
-    props: ['color', 'title', 'items'],
+    props: {
+        color: {
+            type: String,
+            default: 'green'
+        },
+        title: {
+            type: String,
+            default: 'Menu'
+        },
+        items: {
+            type: Array
+        },
+        fontColor: {
+            type: String,
+            default: 'white'
+        }
+    },
     data: function data() {
         return {
             bColor: {
-                backgroundColor: this.color
+                backgroundColor: this.color,
+                color: this.fontColor
             }
         };
     }

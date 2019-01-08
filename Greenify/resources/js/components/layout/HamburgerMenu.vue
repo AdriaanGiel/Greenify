@@ -21,11 +21,28 @@
 <script>
     export default {
         name: "HamburgerMenu",
-        props:['color','title','items'],
+        props:{
+            color:{
+                type: String,
+                default: 'green'
+            },
+            title:{
+                type: String,
+                default: 'Menu'
+            },
+            items:{
+                type: Array
+            },
+            fontColor:{
+                type: String,
+                default: 'white'
+            }
+        },
         data(){
             return{
                 bColor: {
-                    backgroundColor: this.color
+                    backgroundColor: this.color,
+                    color: this.fontColor
                 }
             }
         }
@@ -40,7 +57,7 @@
     width: 100%;
 
     .menu-title{
-        margin-top: 0;
+        margin: 0;
     }
 
     .menu-title-box{
@@ -48,6 +65,9 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        span{
+            padding: .35em;
+        }
     }
 }
 

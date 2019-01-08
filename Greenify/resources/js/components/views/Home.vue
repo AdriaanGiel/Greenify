@@ -1,6 +1,6 @@
 <template>
 
-    <page-wrapper :bottom-fixed="false"  bottom-color="green" picture-position="bottom 2em"  >
+    <page-wrapper :bottom-fixed="false"  bottom-color="green" picture-position="bottom 2em" >
 
         <ham-menu title="menu" :items="['home','profiel','uitloggen']" color="red"></ham-menu>
 
