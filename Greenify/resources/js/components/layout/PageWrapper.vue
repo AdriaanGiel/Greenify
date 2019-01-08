@@ -70,16 +70,12 @@
             }
         },
         methods: {
-
         }
-
     }
 </script>
 
 <style lang="scss" scoped>
-
     @import '../../../sass/variables';
-
     .backgroundImage{
         background-position: center;
         background-repeat: no-repeat;
@@ -87,11 +83,13 @@
             background-size: cover; /* Resize the background image to cover the entire container */
         }
     }
-
     .page-wrapper{
         height: 100%;
         .content{
             min-height: 100vh;
+            :nth-child(0){
+                position: absolute;
+            }
         }
     }
     .top{
@@ -123,7 +121,6 @@
             width: inherit;
         }
     }
-
     .skew{
         z-index: 2;
         transform: skewY(-5deg);
@@ -133,10 +130,4 @@
             height: 40vh;
         }
     }
-
-
-
-
-
-
 </style>
