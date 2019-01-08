@@ -99,6 +99,9 @@
                 height: 100%;
                 max-width: 100vw;
                 position: relative;
+                :first-child{
+                    padding: .1em;
+                }
             }
         }
     }
