@@ -1,5 +1,5 @@
 <template>
-    <div class="ham-menu" :class="state" :style="bColor">
+    <div class="ham-menu absolute" :class="state" :style="bColor">
         <div class="menu-title-box">
             <h2 class="menu-title">
                 {{ title }}
@@ -11,7 +11,10 @@
 
         <ul class="menu-items">
            <li v-for="item in items" class="menu-item">
-               {{ item }}
+
+               <router-link tag="span" v-if="item.route" :to="{name:item.route}">{{ item.text }}</router-link>
+
+               <span v-else @click="$emit(item.emit)">{{item.text}}</span>
            </li>
         </ul>
 
@@ -62,9 +65,9 @@
 
 .ham-menu{
     position: absolute;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-    z-index: 8;
+    z-index: 10;
     &.hidden{
         display: none;
     }

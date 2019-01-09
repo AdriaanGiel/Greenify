@@ -95,11 +95,12 @@
         .content{
             min-height: 100vh;
             width: 100%;
-            :first-child{
+            :first-child:not(.absolute){
                 height: 100%;
                 max-width: 100vw;
                 position: relative;
             }
+
         }
 
     }

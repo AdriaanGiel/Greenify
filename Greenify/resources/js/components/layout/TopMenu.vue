@@ -1,20 +1,23 @@
 <template>
-    <div>
-        <ham-menu ref="hamMenu" :title="this.menuTitle" :items="this.navItems" :color="this.color"></ham-menu>
-        <top-menu :font-color="this.fontColor" :color="this.color" @openMenu="$refs.hamMenu.openMenu()" :title="this.title"></top-menu>
+    <div class="navbar" :style="navStyle">
+        <div class="absolute left-icon">
+            <i v-if="back" @click="$router.back()" class=" fas fa-arrow-left"></i>
+        </div>
+
+        <h2 v-if="title" class="title">
+            {{ title }}
+        </h2>
+
+        <div class="right">
+            <i @click="$emit('openMenu')" v-if="menu" class="fas fa-align-justify"></i>
+        </div>
     </div>
 </template>
 
 <script>
-    import HamMenu from './HamburgerMenu';
-    import TopMenu from './TopMenu';
     export default {
-        name: "NavigationBar",
+        name: "TopMenu",
         props:{
-            menuTitle:{
-                type: String,
-                default: 'MENU'
-            },
             title:{
                 type: String,
                 default: ''
@@ -34,28 +37,15 @@
             color:{
                 type:String,
                 default: 'green'
-            },
-            navItems:{
-                type:Array,
-                default(){
-                    return [
-                        {text: 'HOME', route: 'home'},
-                        {text: 'MIJN PROFIEL', route: 'user_dashboard'},
-                        {text:"UITLOGGEN", emit:'logout_user'}
-                        ];
-                }
             }
-        },
-        components:{
-          HamMenu,
-          TopMenu
         },
         data(){
             return{
                 navStyle:{
                     backgroundColor:this.color,
                     color:this.fontColor
-                }
+                },
+                from:null
             }
         }
     }

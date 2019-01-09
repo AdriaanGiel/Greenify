@@ -23,12 +23,26 @@ let routes = [
         }
     },
     {
+        path: '/home',
+        component: Home,
+        name: 'home',
+        meta: {
+            title: "Greenify - Home",
+            metaTags: [
+                { name: "description", content: "De overzicht pagina voor Greenify" },
+                { property: "og:description", content: "De overzicht pagina voor Greenify" }
+            ]
+        }
+    },
+    {
         path: '/over-ons',
-        component: About
+        component: About,
+        name: 'about'
     },
     {
         path: '/registreren',
         component: Register,
+        name: 'register',
         meta: {
             title: "Registreren",
             metaTags: [
@@ -39,6 +53,7 @@ let routes = [
     {
         path: '/login',
         component: Login,
+        name: 'login',
         meta: {
             title: "Inloggen",
             metaTags: [
@@ -50,6 +65,7 @@ let routes = [
     {
         path: '/gebruiker/overzicht',
         component: Dashboard,
+        name: 'user_dashboard',
         meta: {
             title: "Gebruiker overzicht",
             metaTags: [
@@ -61,6 +77,7 @@ let routes = [
     {
         path: '/eten',
         component: Food,
+        name: 'food',
         meta: {
             title: "Eten overzicht",
             metaTags: [
@@ -72,6 +89,7 @@ let routes = [
     {
         path: '/vervoer',
         component: Transport,
+        name: 'transport',
         meta: {
             title: "Eten overzicht",
             metaTags: [
@@ -83,6 +101,7 @@ let routes = [
     {
         path: '/winkel',
         component: Shop,
+        name: 'shop',
         meta: {
             title: "Winkels overzicht",
             metaTags: [
@@ -93,7 +112,8 @@ let routes = [
     },
     {
         path: '/:category/:slug',
-        component: Detail
+        component: Detail,
+        name: 'detail',
     }
 ];
 
