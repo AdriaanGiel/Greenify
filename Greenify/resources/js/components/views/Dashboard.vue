@@ -1,7 +1,15 @@
 <template>
     <page-wrapper bottom-color="blue">
         <div slot="top-content">
-            <h1>Hello</h1>
+            <router-link :to="{name: 'category', params: { slug: 'eten', color: 'green'} }">
+                Eten
+            </router-link>
+            <router-link :to="{name: 'category', params: { slug: 'vervoer', color: 'red'} }">
+                Vervoer
+            </router-link>
+            <router-link :to="{name: 'category', params: { slug: 'winkels', color: 'blue'} }">
+                Winkels
+            </router-link>
         </div>
     </page-wrapper>
 </template>

@@ -57,15 +57,10 @@ let routes = [
         }
     },
     {
-        path: '/categorie/:category',
+        path: '/categorie/:slug',
+        name: 'category',
         component: Category,
-        meta: {
-            title: "Categorieen overzicht",
-            metaTags: [
-                { name: "description", content: "De categorieen overzicht pagina voor Greenify" },
-                { property: "og:description", content: "De categorieen overzicht pagina voor Greenify" }
-            ]
-        }
+        props: true
     },
     {
         path: '/:category/:slug',
