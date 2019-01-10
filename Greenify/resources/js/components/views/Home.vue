@@ -1,15 +1,18 @@
 <template>
 
-    <page-wrapper  bottom-color="green" picture-position="bottom 2em" >
+    <page-wrapper :bottom-fixed="false"  bottom-color="green" picture-position="bottom 2em" >
+        <navigation-bar title="HOME"></navigation-bar>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut blanditiis dignissimos eveniet fuga, labore minus non nulla quaerat sint, soluta totam vero voluptate. Cumque deleniti eos magnam odio quis.</p>
 
     </page-wrapper>
 
 </template>
 
 <script>
+
+    import navigationBar from '../layout/NavigationBar'
     export default {
         name: "Home",
+        components: { navigationBar}
     }
 </script>
