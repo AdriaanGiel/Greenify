@@ -2,8 +2,7 @@
     <div style="padding: .5em 1em">
 
         <md-field :key="item.text" v-for="item in formItems">
-            <!--<label>{{item.label}}</label>-->
-            <label>{{item.name}}</label>
+            <label>{{item.label}}</label>
             <md-textarea v-if="item.type === 'textarea'"></md-textarea>
             <md-input v-else :type="item.type" v-model="item.name"></md-input>
 
