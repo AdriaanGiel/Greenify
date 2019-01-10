@@ -16400,9 +16400,17 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("page-wrapper", {
-    attrs: { "bottom-color": "green", "picture-position": "bottom 2em" }
-  })
+  return _c(
+    "page-wrapper",
+    { attrs: { "bottom-color": "green", "picture-position": "bottom 2em" } },
+    [
+      _c("p", [
+        _vm._v(
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut blanditiis dignissimos eveniet fuga, labore minus non nulla quaerat sint, soluta totam vero voluptate. Cumque deleniti eos magnam odio quis."
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -16930,7 +16938,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -16941,14 +16949,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""])
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_CategoryCard__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_CategoryCard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layout_CategoryCard__);
 //
 //
 //
@@ -16958,8 +16960,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "DashboardPage"
+    name: "DashboardPage",
+    components: {
+        CategoryCard: __WEBPACK_IMPORTED_MODULE_0__layout_CategoryCard___default.a
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        axios.get('/api/categories').then(function (response) {
+            return _this.categories = response.data;
+        });
+    },
+    data: function data() {
+        return {
+            categories: null
+        };
+    }
 });
 
 /***/ }),
@@ -16970,48 +16988,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("page-wrapper", { attrs: { "bottom-color": "blue" } }, [
+  return _c("page-wrapper", { attrs: { "bottom-color": "#30336B" } }, [
     _c(
       "div",
       { attrs: { slot: "top-content" }, slot: "top-content" },
-      [
-        _c(
-          "router-link",
-          {
-            attrs: {
-              to: { name: "category", params: { slug: "eten", color: "green" } }
-            }
-          },
-          [_vm._v("\n            Eten\n        ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            attrs: {
-              to: {
-                name: "category",
-                params: { slug: "vervoer", color: "red" }
-              }
-            }
-          },
-          [_vm._v("\n            Vervoer\n        ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            attrs: {
-              to: {
-                name: "category",
-                params: { slug: "winkels", color: "blue" }
-              }
-            }
-          },
-          [_vm._v("\n            Winkels\n        ")]
-        )
-      ],
-      1
+      _vm._l(_vm.categories, function(category, index) {
+        return _c("category-card", {
+          key: index,
+          attrs: { category: category }
+        })
+      })
     )
   ])
 }
@@ -17380,7 +17366,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.backgroundImage[data-v-4070fcec] {\n  background-position: center;\n  background-repeat: no-repeat;\n}\n@media only screen and (max-width: 1085px) {\n.backgroundImage[data-v-4070fcec] {\n      background-size: cover;\n      /* Resize the background image to cover the entire container */\n}\n}\n.page-wrapper[data-v-4070fcec] {\n  height: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] {\n    min-height: 100vh;\n    width: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] :first-child {\n      height: 100%;\n      max-width: 100vw;\n      position: relative;\n}\n.top[data-v-4070fcec] {\n  position: fixed;\n  height: 65vh;\n  width: 100%;\n}\n@media only screen and (max-width: 700px) {\n.top[data-v-4070fcec] {\n      height: 58vh;\n}\n}\n.top .top-content[data-v-4070fcec] {\n    height: 80%;\n    padding: 1em;\n}\n.bottom[data-v-4070fcec] {\n  position: fixed;\n  min-height: 55vh;\n  top: 50vh;\n  width: 100%;\n}\n.bottom.not-fixed[data-v-4070fcec] {\n    position: absolute;\n    min-height: 50%;\n}\n.bottom .bottom-content[data-v-4070fcec] {\n    position: absolute;\n    left: 0;\n    z-index: 5;\n    min-height: inherit;\n    width: inherit;\n}\n.skew[data-v-4070fcec] {\n  z-index: 2;\n  -webkit-transform: skewY(-5deg);\n          transform: skewY(-5deg);\n  height: 40vh;\n}\n@media only screen and (max-width: 1085px) {\n.skew[data-v-4070fcec] {\n      -webkit-transform: skewY(-10deg);\n              transform: skewY(-10deg);\n      height: 40vh;\n}\n}\n", ""]);
+exports.push([module.i, "\n.backgroundImage[data-v-4070fcec] {\n  background-position: center;\n  background-repeat: no-repeat;\n}\n@media only screen and (max-width: 1085px) {\n.backgroundImage[data-v-4070fcec] {\n      background-size: cover;\n      /* Resize the background image to cover the entire container */\n}\n}\n.page-wrapper[data-v-4070fcec] {\n  height: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] {\n    min-height: 100vh;\n    width: 100%;\n}\n.page-wrapper .content[data-v-4070fcec] > :first-child:not(.absolute) {\n      height: 100%;\n      max-width: 100vw;\n      position: relative;\n}\n.page-wrapper .content[data-v-4070fcec] > :first-child:not(.absolute) > :first-child {\n        padding: .1em;\n}\n.top[data-v-4070fcec] {\n  position: fixed;\n  height: 65vh;\n  width: 100%;\n}\n@media only screen and (max-width: 700px) {\n.top[data-v-4070fcec] {\n      height: 58vh;\n}\n}\n.top .top-content[data-v-4070fcec] {\n    height: 80%;\n}\n.bottom[data-v-4070fcec] {\n  position: fixed;\n  min-height: 55vh;\n  top: 50vh;\n  width: 100%;\n}\n.bottom.not-fixed[data-v-4070fcec] {\n    position: absolute;\n    min-height: 50%;\n}\n.bottom .bottom-content[data-v-4070fcec] {\n    position: absolute;\n    left: 0;\n    z-index: 5;\n    height: 100%;\n    width: inherit;\n}\n.skew[data-v-4070fcec] {\n  z-index: 2;\n  -webkit-transform: skewY(-5deg);\n          transform: skewY(-5deg);\n  height: 40vh;\n}\n@media only screen and (max-width: 1085px) {\n.skew[data-v-4070fcec] {\n      -webkit-transform: skewY(-10deg);\n              transform: skewY(-10deg);\n      height: 40vh;\n}\n}\n", ""]);
 
 // exports
 
@@ -17523,6 +17509,150 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(83)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(85)
+/* template */
+var __vue_template__ = __webpack_require__(86)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-3562c098"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/layout/CategoryCard.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3562c098", Component.options)
+  } else {
+    hotAPI.reload("data-v-3562c098", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(84);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("66194e4c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3562c098\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CategoryCard.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3562c098\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./CategoryCard.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.card[data-v-3562c098] {\n  margin: 0 auto;\n  text-align: center;\n  width: 50%;\n  padding: 2em;\n  display: block;\n  border-radius: 15px;\n  color: white;\n  text-decoration: none;\n  margin-bottom: 1em;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 85 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['category']
+});
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "router-link",
+    {
+      staticClass: "card",
+      style: { background: _vm.category.color },
+      attrs: {
+        to: {
+          name: "category",
+          params: { slug: _vm.category.name, color: _vm.category.color }
+        }
+      }
+    },
+    [_vm._v("\n    " + _vm._s(_vm.category.name.toUpperCase()) + "\n")]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3562c098", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

@@ -1,22 +1,28 @@
 <template>
-    <page-wrapper bottom-color="blue">
+    <page-wrapper bottom-color="#30336B">
         <div slot="top-content">
-            <router-link :to="{name: 'category', params: { slug: 'eten', color: 'green'} }">
-                Eten
-            </router-link>
-            <router-link :to="{name: 'category', params: { slug: 'vervoer', color: 'red'} }">
-                Vervoer
-            </router-link>
-            <router-link :to="{name: 'category', params: { slug: 'winkels', color: 'blue'} }">
-                Winkels
-            </router-link>
+            <category-card :key='index' v-for="(category, index) in categories" :category='category' />
         </div>
     </page-wrapper>
 </template>
 
 <script>
+    import CategoryCard from '../layout/CategoryCard'
     export default {
-        name: "DashboardPage"
+        name: "DashboardPage",
+        components: {
+            CategoryCard
+        },
+        mounted() {
+            axios
+                .get('/api/categories')
+                .then(response => (this.categories = response.data))
+        },
+        data() {
+            return {
+                categories: null
+            }
+        }
     }
 </script>
 
