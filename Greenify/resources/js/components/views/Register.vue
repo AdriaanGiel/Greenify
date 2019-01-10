@@ -38,7 +38,7 @@
 
 button {
    display:block;
-   margin-top: 20vh!important; 
+   margin-top: 10px!important; 
 border-radius: 12px;
   height:50px;
   width:200px;
