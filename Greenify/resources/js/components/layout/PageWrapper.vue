@@ -111,7 +111,7 @@
         position: fixed;
         height: 65vh;
         width: 100%;
-        @media only screen and (max-width: 700px){ 
+        @media only screen and (max-width: 700px){
             height: 58vh
         }
         .top-content{
