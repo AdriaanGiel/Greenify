@@ -7,7 +7,7 @@
         </div>
         <div class="bottom" :class="{ 'not-fixed': !bottomFixed }" :style="bColor">
 
-            <div v-if="!bottomFixed" class="bottom-content">
+            <div class="bottom-content">
                 <slot name="bottom-content"></slot>
             </div>
             <div class="skew" :style="sColor"></div>
