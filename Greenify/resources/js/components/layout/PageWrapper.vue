@@ -95,15 +95,17 @@
         .content{
             min-height: 100vh;
             width: 100%;
-            :first-child{
+            > :first-child:not(.absolute){
                 height: 100%;
                 max-width: 100vw;
                 position: relative;
-                :first-child{
+                > :first-child{
                     padding: .1em;
                 }
             }
+
         }
+
     }
     .top{
         position: fixed;
@@ -114,7 +116,6 @@
         }
         .top-content{
             height: 80%;
-            padding: 1em;
         }
     }
     .bottom{
@@ -130,7 +131,7 @@
             position: absolute;
             left: 0;
             z-index: 5;
-            min-height: inherit;
+            height: 100%;
             width: inherit;
         }
     }
