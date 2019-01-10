@@ -91,4 +91,9 @@ npm run dev
  ```
  yarn dev
  ```
+Voordat je een branch pushed!
+Zorg dat je eerst een production build maakt. Dit voorkomt merge conflicts op de master.
+```
+npm run prod
+```
 
