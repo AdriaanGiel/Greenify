@@ -10,10 +10,7 @@
 </template>
 
 <script>
-
-    import navigationBar from '../layout/NavigationBar'
     export default {
-        name: "Home",
-        components: { navigationBar}
+        name: "Home"
     }
 </script>

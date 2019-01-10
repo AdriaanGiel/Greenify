@@ -9,8 +9,11 @@ require('./bootstrap');
 
 import routes from './routes/routes'
 import PageWrapper from './components/layout/PageWrapper'
+import NavigationBar from './components/layout/NavigationBar'
 
 Vue.component("page-wrapper",PageWrapper);
+Vue.component("navigation-bar",NavigationBar);
+
 
 const app = new Vue({
     el: '#app',
