@@ -95,11 +95,11 @@
         .content{
             min-height: 100vh;
             width: 100%;
-            :first-child:not(.absolute){
+            > :first-child:not(.absolute){
                 height: 100%;
                 max-width: 100vw;
                 position: relative;
-                > :first-child{
+                > :first-child:not(.no-height-padding){
                     padding: .1em;
                 }
             }

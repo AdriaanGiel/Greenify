@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <ham-menu ref="hamMenu" :title="this.menuTitle" :items="this.navItems" :color="this.color"></ham-menu>
+    <div class="no-height-padding">
+        <ham-menu  ref="hamMenu" :title="this.menuTitle" :items="this.navItems" :color="this.color"></ham-menu>
         <top-menu :font-color="this.fontColor" :color="this.color" @openMenu="$refs.hamMenu.openMenu()" :title="this.title"></top-menu>
     </div>
 </template>
