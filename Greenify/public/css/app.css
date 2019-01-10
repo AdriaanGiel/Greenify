@@ -20,3 +20,7 @@ html {
   height: inherit;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+

@@ -7,7 +7,7 @@
         </div>
         <div class="bottom" :class="{ 'not-fixed': !bottomFixed }" :style="bColor">
 
-            <div v-if="!bottomFixed" class="bottom-content">
+            <div class="bottom-content">
                 <slot name="bottom-content"></slot>
             </div>
             <div class="skew" :style="sColor"></div>
@@ -95,10 +95,13 @@
         .content{
             min-height: 100vh;
             width: 100%;
-            :first-child:not(.absolute){
+            > :first-child:not(.absolute){
                 height: 100%;
                 max-width: 100vw;
                 position: relative;
+                > :first-child{
+                    padding: .1em;
+                }
             }
 
         }
@@ -113,7 +116,6 @@
         }
         .top-content{
             height: 80%;
-            padding: 1em;
         }
     }
     .bottom{
@@ -129,7 +131,7 @@
             position: absolute;
             left: 0;
             z-index: 5;
-            min-height: inherit;
+            height: 100%;
             width: inherit;
         }
     }
