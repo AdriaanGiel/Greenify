@@ -17708,7 +17708,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.button[data-v-870037cc] {\n  width: 40vw;\n  background-color: #99e86a;\n  text-align: center;\n}\n.button[data-v-870037cc]:active {\n    background-color: #3e8214;\n    -webkit-box-shadow: 0px 0px #888888;\n            box-shadow: 0px 0px #888888;\n}\na[data-v-870037cc] {\n  text-decoration: none;\n}\np[data-v-870037cc] {\n  color: white;\n  font-size: 4vw;\n  font-weight: bold;\n  text-transform: uppercase;\n  letter-spacing: -1px;\n}\n", ""]);
+exports.push([module.i, "\n.button[data-v-870037cc] {\n  width: 40vw;\n  background-color: #99e86a;\n  text-align: center;\n  border-radius: 3px;\n  -webkit-box-shadow: 0px 1px 5px #8888889d;\n          box-shadow: 0px 1px 5px #8888889d;\n}\n.button[data-v-870037cc]:active {\n    background-color: #3e8214;\n    -webkit-box-shadow: 0px 0px #888888;\n            box-shadow: 0px 0px #888888;\n}\na[data-v-870037cc] {\n  text-decoration: none;\n}\np[data-v-870037cc] {\n  color: white;\n  font-size: 4vw;\n  font-weight: bold;\n  text-transform: uppercase;\n  letter-spacing: -1px;\n}\n", ""]);
 
 // exports
 

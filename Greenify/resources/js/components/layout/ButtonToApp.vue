@@ -15,10 +15,9 @@
     .button{
         width: 40vw;
         background-color: #99e86a;
-        // background-image: linear-gradient(#99e86a 40%, #64c926) ;
         text-align: center;
-        // border-radius: 10px;
-        // box-shadow: 2px 2px #888888;
+        border-radius: 3px;
+        box-shadow: 0px 1px 5px #8888889d;
         &:active{
             background-color: #3e8214;
             box-shadow: 0px 0px #888888;
