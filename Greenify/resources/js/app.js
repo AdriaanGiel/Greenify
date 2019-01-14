@@ -14,8 +14,6 @@ import PageFooter from './components/layout/Footer'
 
 Vue.component("page-wrapper",PageWrapper);
 Vue.component('page-footer', PageFooter)
-
-Vue.component("page-wrapper",PageWrapper);
 Vue.component("navigation-bar",NavigationBar);
 
 const app = new Vue({
