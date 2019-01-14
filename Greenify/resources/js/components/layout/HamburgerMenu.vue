@@ -10,10 +10,8 @@
 
 
         <ul class="menu-items">
-           <li v-for="item in items" class="menu-item">
-
+           <li :key="index" v-for="(index, item) in items" class="menu-item">
                <router-link tag="span" v-if="item.route" :to="{name:item.route}">{{ item.text }}</router-link>
-
                <span v-else @click="$emit(item.emit)">{{item.text}}</span>
            </li>
         </ul>
