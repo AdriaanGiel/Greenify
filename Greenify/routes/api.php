@@ -20,6 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 /**
  * Api routes
  */
-
+Route::resource('categories','CategoryController')->only(['index','show']);
 Route::resource('companies','CompanyController');
 Route::resource('reviews','ReviewController');

@@ -3463,7 +3463,10 @@ isobject@^3.0.0, isobject@^3.0.1:
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
+<<<<<<< HEAD
+=======
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
+>>>>>>> origin/master
 
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.4.9"

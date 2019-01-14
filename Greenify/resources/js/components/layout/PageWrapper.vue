@@ -7,7 +7,7 @@
         </div>
         <div class="bottom" :class="{ 'not-fixed': !bottomFixed }" :style="bColor">
 
-            <div v-if="!bottomFixed" class="bottom-content">
+            <div class="bottom-content">
                 <slot name="bottom-content"></slot>
             </div>
             <div class="skew" :style="sColor"></div>
@@ -72,16 +72,12 @@
             }
         },
         methods: {
-
         }
-
     }
 </script>
 
 <style lang="scss" scoped>
-
     @import '../../../sass/variables';
-
     .backgroundImage{
         background-position: center;
         background-repeat: no-repeat;
@@ -89,7 +85,6 @@
             background-size: cover; /* Resize the background image to cover the entire container */
         }
     }
-
     .page-wrapper{
         height: 100%;
         .content{
@@ -134,7 +129,6 @@
             width: inherit;
         }
     }
-
     .skew{
         z-index: 2;
         transform: skewY(-5deg);
@@ -144,10 +138,4 @@
             height: 40vh;
         }
     }
-
-
-
-
-
-
 </style>
