@@ -5,6 +5,8 @@
 
         <company-button :linkDetailCompany='linkToCompany'>
         </company-button>
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
     </page-wrapper>
 </template>
 

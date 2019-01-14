@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-        <a :href='linkSite'><p>Ga naar de site</p></a>
+        <a :href='linkSite'>Ga naar de site</a>
     </div>
 </template>
 
@@ -13,6 +13,7 @@
 
 <style lang="scss" scoped>
     .button{
+        padding: 10px!important;
         width: 40vw;
         background-color: #99e86a;
         text-align: center;
@@ -25,8 +26,6 @@
     }
     a{
         text-decoration: none;
-    }
-    p{
         color:white;
         font-size: 4vw;
         font-weight: bold;
