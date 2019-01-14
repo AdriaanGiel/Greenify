@@ -1,7 +1,7 @@
 <template>
-    <page-wrapper color="blue">
+    <page-wrapper :bottom-color='color'>
         <div slot="top-content">
-            <h1>{{title}}</h1>
+            <h1>{{slug.toUpperCase()}}</h1>
         </div>
     </page-wrapper>
 </template>
@@ -10,7 +10,8 @@
     export default {
         name: "CategoryPage",
         props: {
-            title: String,
+            slug: String,
+            color: String,
         }
     }
 </script>
