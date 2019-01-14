@@ -2,6 +2,8 @@
 
     <page-wrapper bottom-color="green" picture-position="bottom 2em" >
 
+<<<<<<< HEAD
+=======
             <div slot="top-content" class="intro-content-box">
                 <div class="title">
                     <h2>HOI,</h2>
@@ -34,6 +36,7 @@
                     <i class="fab fa-facebook"></i>
                 </div>
             </div>
+>>>>>>> origin/master
 
     </page-wrapper>
 

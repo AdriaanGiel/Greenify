@@ -1,8 +1,15 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import { MdField,MdInput,MdTextarea } from 'vue-material/dist/components';
+import 'vue-material/dist/vue-material.min.css';
+import 'vue-material/dist/theme/default.css'
 
 window.Vue = Vue;
 window.VueRouter = VueRouter;
+
+Vue.use(MdField);
+// Vue.use(MdInput);
+// Vue.use(MdTextarea);
 
 Vue.use(VueRouter);
 /**
