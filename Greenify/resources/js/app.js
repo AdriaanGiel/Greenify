@@ -9,8 +9,10 @@ require('./bootstrap');
 
 import routes from './routes/routes'
 import PageWrapper from './components/layout/PageWrapper'
+import PageFooter from './components/layout/Footer'
 
 Vue.component("page-wrapper",PageWrapper);
+Vue.component('page-footer', PageFooter)
 
 const app = new Vue({
     el: '#app',
