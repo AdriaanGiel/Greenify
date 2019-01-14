@@ -7,7 +7,7 @@
         </div>
         <div class="bottom" :class="{ 'not-fixed': !bottomFixed }" :style="bColor">
 
-            <div v-if="!bottomFixed" class="bottom-content">
+            <div class="bottom-content">
                 <slot name="bottom-content"></slot>
             </div>
             <div class="skew" :style="sColor"></div>
@@ -99,11 +99,10 @@
                 height: 100%;
                 max-width: 100vw;
                 position: relative;
-                > :first-child{
+                > :first-child:not(.no-height-padding){
                     padding: .1em;
                 }
             }
-
         }
 
     }
@@ -111,7 +110,7 @@
         position: fixed;
         height: 65vh;
         width: 100%;
-        @media only screen and (max-width: 700px){ 
+        @media only screen and (max-width: 700px){
             height: 58vh
         }
         .top-content{

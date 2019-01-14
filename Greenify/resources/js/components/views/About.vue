@@ -1,5 +1,5 @@
 <template>
-    <page-wrapper color="blue">
+    <page-wrapper bottom-color="blue">
 
 
 
