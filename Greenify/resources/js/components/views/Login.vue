@@ -10,10 +10,11 @@
 
 <script>
     import ButtonToApp from '../layout/ButtonToApp'
-    import ButtonToApp from '../layout/CompanyButton'
+    import CompanyButton from '../layout/CompanyButton'
     export default {
         components: {
-            ButtonToApp
+            ButtonToApp,
+            CompanyButton
         },
         data() {
             return {
