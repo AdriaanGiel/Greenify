@@ -1,11 +1,6 @@
 <template>
     <div class="intro-heading bottom">
         <p>check ons op<br><a href="http://www.facebook.nl" ><img style="width:50px; height:50px" src="https://i.imgur.com/6BI8ck8.png"/></a></p>
- 
-
-
- 
-      
     </div>
 </template>
 
