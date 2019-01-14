@@ -125,7 +125,6 @@
         width: 100%;
         &.not-fixed{
             position: absolute;
-            min-height: 50%;
         }
         .bottom-content{
             position: absolute;
