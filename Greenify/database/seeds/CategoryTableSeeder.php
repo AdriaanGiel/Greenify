@@ -11,7 +11,11 @@ class CategoryTableSeeder extends Seeder
      */
     public function run()
     {
-        $catArray = [['name' => 'delen'],['name' => 'vervoer'],['name' => 'eten']];
+        $catArray = [
+            ['name' => 'eten', 'color' => '#BADC58'],
+            ['name' => 'vervoer', 'color' => '#EB4D4B'],
+            ['name' => 'winkels', 'color' => '#7ED6DF']
+        ];
         \App\Category::insert($catArray);
 
     }

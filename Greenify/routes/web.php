@@ -20,7 +20,6 @@ Route::get('/{any}', function () {
  */
 Route::resource('companies','CompanyController')->only(['index','show']);
 Route::resource('reviews','ReviewController')->only(['index','show']);
-Route::resource('categories','CategoryController')->only(['index','show']);
 Route::resource('tags','TagController')->only(['index','show']);
 
 Route::get('dashbooard','UserDashboardController@index');
