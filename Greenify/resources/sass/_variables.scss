@@ -8,16 +8,31 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66D9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$blue: #7ED6DF;
+$dark-blue: #30336B;
+$red: #EB4D4B;
+$green: #6AB04C;
+$light-green: #BADC58;
+
+.background-blue{
+  background-color: $blue;
+}
+
+.background-dark-blue{
+ background-color: $dark-blue;
+}
+
+.background-red{
+  background-color: $red;
+}
+.background-green{
+  background-color: $green;
+}
+
+.background-light-green{
+  background-color: $light-green;
+}
+
 
 $smartPhoneWidth: 1085px;
 $smartPhone: "only screen and (max-width: " + $smartPhoneWidth + ")";

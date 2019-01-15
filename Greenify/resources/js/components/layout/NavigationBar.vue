@@ -33,7 +33,7 @@
             },
             color:{
                 type:String,
-                default: 'green'
+                default: 'background-green'
             },
             navItems:{
                 type:Array,
@@ -52,31 +52,8 @@
         },
         data(){
             return{
-                navStyle:{
-                    backgroundColor:this.color,
-                    color:this.fontColor
-                }
+                backgroundClass: this.color,
             }
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    .navbar{
-        width: 100%;
-        position: relative;
-        height: 3em;
-        background-color: red;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h2{
-            margin: 0;
-            text-align: center;
-        }
-        div{
-            padding: 1rem;
-            font-size: 1.4rem;
-        }
-    }
-</style>

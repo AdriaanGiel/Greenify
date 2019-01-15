@@ -27,7 +27,7 @@
         props:{
             color:{
                 type: String,
-                default: 'green'
+                default: 'background-red'
             },
             title:{
                 type: String,
@@ -43,19 +43,19 @@
         },
         data(){
             return{
+                backgroundClass: this.color,
                 bColor: {
-                    backgroundColor: this.color,
                     color: this.fontColor
                 },
-                state: 'slideOutUp animated faster hidden'
+                state: 'slideOutUp animated faster hidden ' + this.color
             }
         },
         methods:{
             closeMenu(){
-                this.state = 'slideOutUp animated faster';
+                this.state = 'slideOutUp animated faster ' + this.backgroundClass;
             },
             openMenu(){
-                this.state = 'slideInDown animated faster'
+                this.state = 'slideInDown animated faster ' + this.backgroundClass;
             }
         }
     }

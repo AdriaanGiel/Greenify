@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar" :style="navStyle">
+    <div class="navbar" :class="backgroundClass" :style="navStyle">
         <div class="absolute left-icon">
             <i v-if="back" @click="$router.back()" class=" fas fa-arrow-left"></i>
         </div>
@@ -36,13 +36,13 @@
             },
             color:{
                 type:String,
-                default: 'green'
+                default: 'background-green'
             }
         },
         data(){
             return{
+                backgroundClass:this.color,
                 navStyle:{
-                    backgroundColor:this.color,
                     color:this.fontColor
                 },
                 from:null
@@ -56,7 +56,6 @@
         width: 100%;
         position: relative;
         height: 3em;
-        background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
