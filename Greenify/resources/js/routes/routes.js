@@ -1,7 +1,7 @@
 import VueRouter from 'vue-router';
 
 import Home from '../components/views/Home'
-import About from '../components/views/About'
+import Join from '../components/views/Join'
 import Register from '../components/views/Register'
 import Login from '../components/views/Login'
 import Dashboard from '../components/views/Dashboard'
@@ -21,21 +21,9 @@ let routes = [
         }
     },
     {
-        path: '/home',
-        component: Home,
-        name: 'home',
-        meta: {
-            title: "Greenify - Home",
-            metaTags: [
-                { name: "description", content: "De overzicht pagina voor Greenify" },
-                { property: "og:description", content: "De overzicht pagina voor Greenify" }
-            ]
-        }
-    },
-    {
-        path: '/over-ons',
-        component: About,
-        name: 'about'
+        path: '/doe-mee',
+        component: Join,
+        name: 'join'
     },
     {
         path: '/registreren',

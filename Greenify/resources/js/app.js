@@ -6,7 +6,6 @@
  */
 require('./bootstrap');
 
-
 import routes from './routes/routes'
 import PageWrapper from './components/layout/PageWrapper'
 import NavigationBar from './components/layout/NavigationBar'
