@@ -2,9 +2,10 @@
     <page-wrapper color="blue">
         <button-to-app :LinkSite='linkToSite'>
         </button-to-app>
+        jervnbkjdncjwsbcks
 
-        <company-button :linkDetailCompany='linkToCompany'>
-        </company-button>
+        <button-detail-company :linkDetailCompany='linkToCompany'>
+        </button-detail-company>
         <company-button :linkDetailCompany='linkToCompany'>
         </company-button>
         <company-button :linkDetailCompany='linkToCompany'>
@@ -20,11 +21,11 @@
 
 <script>
     import ButtonToApp from '../layout/ButtonToApp'
-    import CompanyButton from '../layout/CompanyButton'
+    import ButtonDetailCompany from '../layout/CompanyButton'
     export default {
         components: {
             ButtonToApp,
-            CompanyButton
+            ButtonDetailCompany
         },
         data() {
             return {

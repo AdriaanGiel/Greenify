@@ -1,7 +1,10 @@
 <template>
     <div class="button">
+        <!-- <router-link :to="{name: 'detail', params: { category_slug: category.name, company_slug: company.name, company: company} }">  -->
         <img src="smiley.gif" alt="Smiley face">
-        <a :href='linkDetailCompany'>Company</a>
+        <!-- <a :href='linkDetailCompany'>Company</a> -->
+        <p>Company {{ company.name.toUpperCase() }} </p>
+        <!-- </router-link> -->
     </div>
 </template>
 

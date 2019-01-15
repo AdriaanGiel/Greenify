@@ -36,18 +36,18 @@ let routes = [
     //         ]
     //     }
     // },
-    // {
-    //     path: '/login',
-    //     component: Login,
-    //     name: 'login',
-    //     meta: {
-    //         title: "Inloggen",
-    //         metaTags: [
-    //             { name: "description", content: "De login pagina voor Greenify" },
-    //             { property: "og:description", content: "De login pagina voor Greenify"}
-    //         ]
-    //     }
-    // },
+    {
+        path: '/login',
+        component: Login,
+        name: 'login',
+        meta: {
+            title: "Inloggen",
+            metaTags: [
+                { name: "description", content: "De login pagina voor Greenify" },
+                { property: "og:description", content: "De login pagina voor Greenify"}
+            ]
+        }
+    },
     {
         path: '/dashboard',
         component: Dashboard,
