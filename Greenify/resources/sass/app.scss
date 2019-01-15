@@ -1,20 +1,17 @@
 // Materialize
 @import '~materialize-css/sass/materialize.scss';
 
-html, body{
+html, body, #app {
   height: 100%;
+  margin: 0;
 }
 
-#app {
-  height: 100%;
+.page-wrapper {
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, p, a {
   font-weight: bold;
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 .uppercase{

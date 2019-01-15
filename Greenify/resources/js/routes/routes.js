@@ -20,38 +20,38 @@ let routes = [
             ]
         }
     },
-    {
-        path: '/doe-mee',
-        component: Join,
-        name: 'join'
-    },
-    {
-        path: '/registreren',
-        component: Register,
-        name: 'register',
-        meta: {
-            title: "Registreren",
-            metaTags: [
-                { name: "description", content: "De registrate pagina voor Greenify" }
-            ]
-        }
-    },
-    {
-        path: '/login',
-        component: Login,
-        name: 'login',
-        meta: {
-            title: "Inloggen",
-            metaTags: [
-                { name: "description", content: "De login pagina voor Greenify" },
-                { property: "og:description", content: "De login pagina voor Greenify"}
-            ]
-        }
-    },
+    // {
+    //     path: '/doe-mee',
+    //     component: Join,
+    //     name: 'join'
+    // },
+    // {
+    //     path: '/registreren',
+    //     component: Register,
+    //     name: 'register',
+    //     meta: {
+    //         title: "Registreren",
+    //         metaTags: [
+    //             { name: "description", content: "De registrate pagina voor Greenify" }
+    //         ]
+    //     }
+    // },
+    // {
+    //     path: '/login',
+    //     component: Login,
+    //     name: 'login',
+    //     meta: {
+    //         title: "Inloggen",
+    //         metaTags: [
+    //             { name: "description", content: "De login pagina voor Greenify" },
+    //             { property: "og:description", content: "De login pagina voor Greenify"}
+    //         ]
+    //     }
+    // },
     {
         path: '/dashboard',
         component: Dashboard,
-        name: 'user_dashboard',
+        name: 'dashboard',
         meta: {
             title: "Gebruiker overzicht",
             metaTags: [

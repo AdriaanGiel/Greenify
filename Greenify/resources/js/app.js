@@ -17,5 +17,5 @@ Vue.component("navigation-bar",NavigationBar);
 
 const app = new Vue({
     el: '#app',
-    router: routes
+    router: routes,
 });

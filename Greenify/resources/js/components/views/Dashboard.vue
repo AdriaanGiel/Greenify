@@ -1,6 +1,7 @@
 <template>
     <page-wrapper bottom-color="#30336B">
         <div slot="content">
+            <navigation-bar />
             <h2>Dashboard</h2>
             <category-card :key='index' v-for="(category, index) in categories" :category='category' />
         </div>
