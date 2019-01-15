@@ -7,13 +7,11 @@
         <title>Greenify</title>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
     </head>
     <body>
         <div id="app">
-            
             <router-view></router-view>
         </div>
         <script src="{{ mix('/js/app.js') }}"></script>

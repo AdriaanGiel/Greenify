@@ -1,6 +1,7 @@
 <template>
     <page-wrapper bottom-color="#30336B">
-        <div slot="top-content">
+        <div slot="content">
+            <h2>Dashboard</h2>
             <category-card :key='index' v-for="(category, index) in categories" :category='category' />
         </div>
     </page-wrapper>
@@ -8,10 +9,14 @@
 
 <script>
     import CategoryCard from '../layout/CategoryCard'
+    import NavigationBar from '../layout/NavigationBar'
+    import HamburgerMenu from '../layout/HamburgerMenu'
     export default {
         name: "DashboardPage",
         components: {
-            CategoryCard
+            CategoryCard,
+            NavigationBar,
+            HamburgerMenu,
         },
         mounted() {
             axios

@@ -1,14 +1,11 @@
 <template>
-
-    <page-wrapper bottom-color="#4caf50" picture-position="bottom 2em" >
+    <page-wrapper bottom-color="#4caf50">
         <div slot="content">
             <div class="row">
-                <h1 class="blue-grey-text text-darken-4">Hoi, <br/> <span class="green-text">Welkom!</span></h1>
-                <p class="blue-grey-text text-darken-3">
-                    In Rotterdam barst het van de duurzame initiatieven. Wil jij weten hoe jij
-                    Rotterdam een duurzame stad kan maken?
-                </p>
-                <router-link :to="{name: 'join'}" class="waves-effect waves-light green btn">Doe met ons mee!</router-link>
+                <h1 class="blue-grey-text text-darken-4">Doe met <br/> <span class="green-text">ons mee!</span></h1>
+                <router-link :to="{name: 'login'}" class="waves-effect waves-light green btn">Inloggen!</router-link>
+                <p>Of</p>
+                <router-link :to="{name: 'register'}" class="waves-effect waves-light teal btn">Maak een nieuw account aan</router-link>
             </div>
             <div class="row">
                 <div class="company-title white-text">
@@ -25,17 +22,24 @@
             </div>
         </div>
     </page-wrapper>
-
 </template>
 
 <script>
     export default {
-        name: "Home"
+        name: "AboutPage",
+        watch:{
+            $route(to,from){
+                console.log('asdasdasd');
+                this.$emit('viewChange',{
+                    color: 'red'
+                })
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-    .company-title {
+     .company-title {
         position: absolute;
         bottom: 40vw;
     }

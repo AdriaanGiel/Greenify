@@ -4,7 +4,6 @@
             <h2 class="menu-title">
                 {{ title }}
             </h2>
-
             <span @click="closeMenu"><i class="fas fa-times"></i></span>
         </div>
 

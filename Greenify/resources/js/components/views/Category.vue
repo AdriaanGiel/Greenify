@@ -1,6 +1,6 @@
 <template>
     <page-wrapper :bottom-color='color'>
-        <div slot="top-content">
+        <div slot="content">
             <h1>{{slug.toUpperCase()}}</h1>
         </div>
     </page-wrapper>

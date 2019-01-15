@@ -1,24 +1,8 @@
 <template>
-    <div class="page-wrapper background">
-        <div class="top backgroundImage" :style="backgroundImage">
-            <div class="top-content">
-                <slot name="top-content"></slot>
-            </div>
+    <div class="page-wrapper" :style="bColor">
+        <div class="container">
+            <slot name="content"></slot>
         </div>
-        <div class="bottom" :class="{ 'not-fixed': !bottomFixed }" :style="bColor">
-
-            <div class="bottom-content">
-                <slot name="bottom-content"></slot>
-            </div>
-            <div class="skew" :style="sColor"></div>
-        </div>
-
-        <div class="content">
-            <div>
-                <slot></slot>
-            </div>
-        </div>
-
     </div>
 </template>
 
@@ -28,7 +12,7 @@
         props:{
           topColor:{
               type: String,
-              default: "white"
+              default: "transparent"
           },
             bottomColor:{
                 type: String,
@@ -50,9 +34,9 @@
         data() {
             return {
                 tColor: this.topColor ,
-                sColor: { backgroundColor: this.bottomColor },
+                sColor: { background: this.bottomColor },
                 bColor: {
-                    background: `linear-gradient(to bottom, rgba(255,0,0,0) 50%, ${this.bottomColor} 50%)`
+                    backgroundImage: `linear-gradient(-190deg, white 50%, ${this.bottomColor} 50%)`
                 },
                 bImage:this.picture
             }
@@ -87,55 +71,5 @@
     }
     .page-wrapper{
         height: 100%;
-        .content{
-            min-height: 100vh;
-            width: 100%;
-            > :first-child:not(.absolute){
-                height: 100%;
-                max-width: 100vw;
-                position: relative;
-                > :first-child:not(.no-height-padding){
-                    padding: .1em;
-                }
-            }
-        }
-
-    }
-    .top{
-        position: fixed;
-        height: 65vh;
-        width: 100%;
-        @media only screen and (max-width: 700px){
-            height: 58vh
-        }
-        .top-content{
-            height: 80%;
-        }
-    }
-    .bottom{
-        position: fixed;
-        min-height: 55vh;
-        top: 50vh;
-        width: 100%;
-        &.not-fixed{
-            position: absolute;
-            min-height: 50%;
-        }
-        .bottom-content{
-            position: absolute;
-            left: 0;
-            z-index: 5;
-            height: 100%;
-            width: inherit;
-        }
-    }
-    .skew{
-        z-index: 2;
-        transform: skewY(-5deg);
-        height: 40vh;
-        @media #{$smartPhone}{
-            transform: skewY(-10deg);
-            height: 40vh;
-        }
     }
 </style>
