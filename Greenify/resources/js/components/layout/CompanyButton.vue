@@ -1,6 +1,6 @@
 <template>
     <div class="button">
-        <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+        <img src="smiley.gif" alt="Smiley face">
         <a :href='linkDetailCompany'>Company</a>
     </div>
 </template>
@@ -14,7 +14,9 @@
 
 <style lang="scss" scoped>
     img{
-        border-radius: 30px;
+        height: 16vw;
+        width: 16vw;
+        border-radius: 12vw;
         background-color: red; 
         float: left;
     }
