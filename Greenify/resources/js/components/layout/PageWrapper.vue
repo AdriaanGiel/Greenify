@@ -36,7 +36,7 @@
                 tColor: this.topColor ,
                 sColor: { background: this.bottomColor },
                 bColor: {
-                    backgroundImage: `linear-gradient(-190deg, white 50%, ${this.bottomColor} 50%)`
+                    backgroundImage: `linear-gradient(-190deg, white 350px, ${this.bottomColor} 0)`
                 },
                 bImage:this.picture
             }
@@ -68,8 +68,5 @@
         @media #{$smartPhone}{
             background-size: cover; /* Resize the background image to cover the entire container */
         }
-    }
-    .page-wrapper{
-        height: 100%;
     }
 </style>

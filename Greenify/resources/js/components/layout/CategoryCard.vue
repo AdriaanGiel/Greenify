@@ -1,5 +1,5 @@
 <template>
-    <router-link class="card" :style="{background: category.color}" :to="{name: 'category', params: { slug: category.name, color: category.color} }">
+    <router-link class="card" :style="{background: category.color}" :to="{name: 'category', params: { category_slug: category.name, category: category} }">
         <i class="fas fa-lemon"></i>
         {{ category.name.toUpperCase() }}
     </router-link>
@@ -7,15 +7,13 @@
 
 <script>
 export default {
-    props: ['category']
+    props: ['category'],
 }
 </script>
 
 <style lang="scss" scoped>
 .card {
-    margin: 0 auto;
     text-align: center;
-    width: 50%;
     padding: 3rem;
     display: block;
     border-radius: 15px;

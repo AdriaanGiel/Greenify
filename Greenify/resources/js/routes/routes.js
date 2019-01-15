@@ -20,38 +20,38 @@ let routes = [
             ]
         }
     },
-    {
-        path: '/doe-mee',
-        component: Join,
-        name: 'join'
-    },
-    {
-        path: '/registreren',
-        component: Register,
-        name: 'register',
-        meta: {
-            title: "Registreren",
-            metaTags: [
-                { name: "description", content: "De registrate pagina voor Greenify" }
-            ]
-        }
-    },
-    {
-        path: '/login',
-        component: Login,
-        name: 'login',
-        meta: {
-            title: "Inloggen",
-            metaTags: [
-                { name: "description", content: "De login pagina voor Greenify" },
-                { property: "og:description", content: "De login pagina voor Greenify"}
-            ]
-        }
-    },
+    // {
+    //     path: '/doe-mee',
+    //     component: Join,
+    //     name: 'join'
+    // },
+    // {
+    //     path: '/registreren',
+    //     component: Register,
+    //     name: 'register',
+    //     meta: {
+    //         title: "Registreren",
+    //         metaTags: [
+    //             { name: "description", content: "De registrate pagina voor Greenify" }
+    //         ]
+    //     }
+    // },
+    // {
+    //     path: '/login',
+    //     component: Login,
+    //     name: 'login',
+    //     meta: {
+    //         title: "Inloggen",
+    //         metaTags: [
+    //             { name: "description", content: "De login pagina voor Greenify" },
+    //             { property: "og:description", content: "De login pagina voor Greenify"}
+    //         ]
+    //     }
+    // },
     {
         path: '/dashboard',
         component: Dashboard,
-        name: 'user_dashboard',
+        name: 'dashboard',
         meta: {
             title: "Gebruiker overzicht",
             metaTags: [
@@ -61,16 +61,16 @@ let routes = [
         }
     },
     {
-        path: '/categorie/:slug',
-        name: 'category',
+        path: '/:category_slug',
         component: Category,
+        name: 'category',
         props: true
     },
     {
-        path: '/:category/:slug',
+        path: '/:category_slug/:company-slug',
         component: Detail,
         name: 'detail',
-    }
+    },
 ];
 
 
