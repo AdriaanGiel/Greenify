@@ -27,7 +27,6 @@
         width: 90vw;
         height: 24vw;
         background-color: white;
-        // border-radius: 3px;
         border-color: red;
         border-style: solid;
         border-width: 1px;
@@ -37,7 +36,7 @@
         }
     }
     a{
-        margin: 3vw;
+        margin: 6vw;
         float: left;
         text-decoration: none;
         color: grey;

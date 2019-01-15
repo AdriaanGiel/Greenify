@@ -1,19 +1,35 @@
 <template>
     <page-wrapper color="blue">
-        <button-to-app :LinkSite='link'>
+        <button-to-app :LinkSite='linkToSite'>
         </button-to-app>
+
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
+        <company-button :linkDetailCompany='linkToCompany'>
+        </company-button>
     </page-wrapper>
 </template>
 
 <script>
     import ButtonToApp from '../layout/ButtonToApp'
+    import CompanyButton from '../layout/CompanyButton'
     export default {
         components: {
-            ButtonToApp
+            ButtonToApp,
+            CompanyButton
         },
         data() {
             return {
-                link: '#'
+                linkToSite: '#',
+                linkToCompany: 'company'
             }
         },
         name: "LoginPage"
