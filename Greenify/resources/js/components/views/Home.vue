@@ -1,56 +1,41 @@
 <template>
 
-    <!--<page-wrapper bottom-color="green" picture-position="bottom 2em" >-->
+    <page-wrapper bottom-color="green" picture-position="bottom 2em" >
 
-            <!--<div slot="top-content" class="intro-content-box">-->
-                <!--<div class="title">-->
-                    <!--<h2>HOI,</h2>-->
-                    <!--<h2>WELKOM!</h2>-->
-                <!--</div>-->
+            <div slot="top-content" class="intro-content-box">
+                <div class="title">
+                    <h2>HOI,</h2>
+                    <h2>WELKOM!</h2>
+                </div>
 
-                <!--<div class="intro-content">-->
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur eos eum labore neque omnis quae sapiente ut vel velit! Ad aliquid atque, incidunt officiis possimus quas similique. Iusto, maiores.</p>-->
-                <!--</div>-->
+                <div class="intro-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur eos eum labore neque omnis quae sapiente ut vel velit! Ad aliquid atque, incidunt officiis possimus quas similique. Iusto, maiores.</p>
+                </div>
 
-                <!--<div class="button">-->
-                    <!--<button class="call">-->
-                        <!--DOE MET ONS MEE-->
-                    <!--</button>-->
-                <!--</div>-->
-            <!--</div>-->
+                <div class="button">
+                    <button class="call">
+                        DOE MET ONS MEE
+                    </button>
+                </div>
+            </div>
 
-            <!--<div slot="bottom-content" class="intro-bottom">-->
-                <!--<div class="title">-->
-                    <!--<h2 class="company-title uppercase">Greenify</h2>-->
-                    <!--<h2 class="company-location uppercase">Rotterdam</h2>-->
-                <!--</div>-->
+            <div slot="bottom-content" class="intro-bottom">
+                <div class="title">
+                    <h2 class="company-title uppercase">Greenify</h2>
+                    <h2 class="company-location uppercase">Rotterdam</h2>
+                </div>
 
-                <!--<div class="icon">-->
-                    <!--<img class="logo" src="/storage/svg/iconfinder-icon.svg" alt="logo">-->
-                <!--</div>-->
+                <div class="icon">
+                    <img class="logo" src="/storage/svg/iconfinder-icon.svg" alt="logo">
+                </div>
 
-                <!--<div class="social">-->
-                    <!--<span class="call-text uppercase">Check ons op</span>-->
-                    <!--<i class="fab fa-facebook"></i>-->
-                <!--</div>-->
-            <!--</div>-->
+                <div class="social">
+                    <span class="call-text uppercase">Check ons op</span>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
 
-    <!--</page-wrapper>-->
-
-    <page-wrapper-v2>
-            <navigation-bar></navigation-bar>
-
-
-        <div slot="bottom-content">
-                <p style="padding: 1em 0;">sadasdas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, dolore exercitationem expedita fugiat inventore itaque magnam maxime minus, modi odio optio praesentium rem sunt tempora temporibus vitae voluptates. Ipsum?</p>
-                <p style="padding: 1em 0;">sadasdas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, dolore exercitationem expedita fugiat inventore itaque magnam maxime minus, modi odio optio praesentium rem sunt tempora temporibus vitae voluptates. Ipsum?</p>
-                <p style="padding: 1em 0;">sadasdas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, dolore exercitationem expedita fugiat inventore itaque magnam maxime minus, modi odio optio praesentium rem sunt tempora temporibus vitae voluptates. Ipsum?</p>
-                <p style="padding: 1em 0;">sadasdas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, dolore exercitationem expedita fugiat inventore itaque magnam maxime minus, modi odio optio praesentium rem sunt tempora temporibus vitae voluptates. Ipsum?</p>
-                <p style="padding: 0; margin: 0">sadasdas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, dolore exercitationem expedita fugiat inventore itaque magnam maxime minus, modi odio optio praesentium rem sunt tempora temporibus vitae voluptates. Ipsum?</p>
-        </div>
-
-    </page-wrapper-v2>
-
+    </page-wrapper>
 </template>
 
 <script>
