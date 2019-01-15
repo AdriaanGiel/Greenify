@@ -88,7 +88,7 @@ let routes = [
 
 const router = new VueRouter({
     routes,
-    // mode: 'history'
+    mode: 'history' 
 });
 
 // This callback runs before every route change, including on page load.
