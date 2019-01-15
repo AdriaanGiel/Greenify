@@ -61,16 +61,16 @@ let routes = [
         }
     },
     {
-        path: '/categorie/:slug',
-        name: 'category',
+        path: '/:category_slug',
         component: Category,
+        name: 'category',
         props: true
     },
     {
-        path: '/:category/:slug',
+        path: '/:category_slug/:company-slug',
         component: Detail,
         name: 'detail',
-    }
+    },
 ];
 
 
