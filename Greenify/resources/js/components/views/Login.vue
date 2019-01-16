@@ -1,33 +1,28 @@
 <template>
     <page-wrapper bottom-color="purple">
-        <slot name="content">
-            <button-to-app :LinkSite='linkToSite'>
-            </button-to-app>
-            jervnbkjdncjwsbcks
-
-            <button-detail-company :linkDetailCompany='linkToCompany'>
-            </button-detail-company>
-            <company-button :linkDetailCompany='linkToCompany'>
-            </company-button>
-            <company-button :linkDetailCompany='linkToCompany'>
-            </company-button>
-            <company-button :linkDetailCompany='linkToCompany'>
-            </company-button>
-            <company-button :linkDetailCompany='linkToCompany'>
-            </company-button>
-            <company-button :linkDetailCompany='linkToCompany'>
-            </company-button>
-        </slot>
+        <div slot="content">
+            <h1>ETEN</h1>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+            <company-button/>
+        </div>
     </page-wrapper>
 </template>
 
 <script>
     import ButtonToApp from '../layout/ButtonToApp'
-    import ButtonDetailCompany from '../layout/CompanyButton'
+    import CompanyButton from '../layout/CompanyButton'
     export default {
         components: {
             ButtonToApp,
-            ButtonDetailCompany
+            CompanyButton
         },
         data() {
             return {
@@ -40,5 +35,6 @@
 </script>
 
 <style scoped>
+
 
 </style>

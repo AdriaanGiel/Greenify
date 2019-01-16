@@ -3,15 +3,17 @@
         <!-- <router-link :to="{name: 'detail', params: { category_slug: category.name, company_slug: company.name, company: company} }">  -->
         <img src="smiley.gif" alt="Smiley face">
         <!-- <a :href='linkDetailCompany'>Company</a> -->
-        <p>Company {{ company.name.toUpperCase() }} </p>
+        <p>Company </p> <!-- {{ company.name.toUpperCase() }} -->
         <!-- </router-link> -->
     </div>
 </template>
 
 <script>
     export default {
-        name: "ButtonDetailCompany",
-        props: ['linkDetailCompany']
+        name: "CompanyButton",
+        props: ['linkDetailCompany'],
+        company: {name:'test'}
+
     }
 </script>
 
@@ -25,7 +27,8 @@
     }
     .button{
         box-sizing: border-box;
-        margin: 5vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
         padding: 4vw 0vw 0vw 4vw!important;
         width: 90vw;
         height: 24vw;
