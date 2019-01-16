@@ -28,17 +28,21 @@
         methods: {
             fetchCategory() {
                 this.loading = true
-                axios.get('/api/categories/eten')
+                axios.get(`/api/categories/${this.$data.category_slug}`)
                 .then(response => {
                     this.category = response.data
                     this.loading = false
+                })
+                .catch(function (error) {
+                    alert('404 category not found.')
                 })
             }
         },
         data() {
             return {
                 loading: true,
-                category: null
+                category: null,
+                category_slug: this.$route.params.category_slug
             }
         },
     }
