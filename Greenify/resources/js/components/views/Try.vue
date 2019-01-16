@@ -1,12 +1,12 @@
 <template>
-    <page-wrapper bottom-color="#30336B">
-        <h1>Company</h1>
+    <page-wrapper bottom-color="#999744">
+        <div slot="content">
 
-    <button-to-app :LinkSite='link'>
-    </button-to-app>
-
-<p>Beschrijving van het product of het restaurant of de winkel</p>
-
+            <h2>Try</h2>
+           
+           <button-to-app/>
+        </div>
+   
     </page-wrapper>
 </template>
 
@@ -21,7 +21,7 @@
                 link: '#'
             }
         },
-        name: "DetailPage"
+        name: "LoginPage"
     }
 </script>
 

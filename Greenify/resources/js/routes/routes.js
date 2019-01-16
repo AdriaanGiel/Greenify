@@ -7,6 +7,7 @@ import Login from '../components/views/Login'
 import Dashboard from '../components/views/Dashboard'
 import Detail from '../components/views/Detail'
 import Category from '../components/views/Category'
+import Try from '../components/views/Try'
 
 let routes = [
     {
@@ -36,18 +37,30 @@ let routes = [
     //         ]
     //     }
     // },
-    // {
-    //     path: '/login',
-    //     component: Login,
-    //     name: 'login',
-    //     meta: {
-    //         title: "Inloggen",
-    //         metaTags: [
-    //             { name: "description", content: "De login pagina voor Greenify" },
-    //             { property: "og:description", content: "De login pagina voor Greenify"}
-    //         ]
-    //     }
-    // },
+    {
+        path: '/login',
+        component: Login,
+        name: 'login',
+        meta: {
+            title: "Inloggen",
+            metaTags: [
+                { name: "description", content: "De login pagina voor Greenify" },
+                { property: "og:description", content: "De login pagina voor Greenify"}
+            ]
+        }
+    },
+    {
+        path: '/registreren',
+        component: Register,
+        name: 'Registreren',
+        meta: {
+            title: "Registreren",
+            metaTags: [
+                { name: "description", content: "De login pagina voor Greenify" },
+                { property: "og:description", content: "De login pagina voor Greenify"}
+            ]
+        }
+    },
     {
         path: '/dashboard',
         component: Dashboard,
@@ -67,10 +80,24 @@ let routes = [
         props: true
     },
     {
-        path: '/:category_slug/:company-slug',
+        //path: '/:category_slug/:company-slug',
+        path: '/detail',
         component: Detail,
         name: 'detail',
+        props: true
     },
+    {
+        path: '/try',
+        component: Try,
+        name: 'try',
+        meta: {
+            title: "Try",
+            metaTags: [
+                { name: "description", content: "De login pagina voor Greenify" },
+                { property: "og:description", content: "De login pagina voor Greenify"}
+            ]
+        }
+    }
 ];
 
 
