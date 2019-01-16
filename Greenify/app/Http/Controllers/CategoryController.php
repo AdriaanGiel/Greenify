@@ -26,8 +26,18 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-
         return response()->json(Category::findOrFail($id));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  string  $slug
+     * @return \Illuminate\Http\Response
+     */
+    public function showBySlug($slug)
+    {
+        return response()->json(Category::where('name', $slug)->firstOrFail()); 
     }
 
 

@@ -1,5 +1,5 @@
 <template>
-    <router-link class="card" :style="{background: category.color}" :to="{name: 'category', params: { category_slug: category.name, category: category} }">
+    <router-link class="card" :style="{background: category.color}" :to="{name: 'category', params: { category_slug: category.name } }">
         <i class="fas fa-lemon"></i>
         {{ category.name.toUpperCase() }}
     </router-link>
