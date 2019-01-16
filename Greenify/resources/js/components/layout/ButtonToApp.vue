@@ -7,7 +7,7 @@
 <script>
     export default {
         name: "ButtonToApp",
-        props: ['taart']
+        props: ['linkSite']
     }
 </script>
 
