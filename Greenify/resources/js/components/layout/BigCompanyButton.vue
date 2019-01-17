@@ -1,17 +1,19 @@
 <template>
     <div class="button">
         <!-- <router-link :to="{name: 'detail', params: { category_slug: category.name, company_slug: company.name} }">  -->
+        <div class="block">
         <img src="smiley.gif" alt="Smiley face">
-        <!-- <p>{{ company.name.toUpperCase() }} </p>  -->
-        <p> Peer</p>
+        <h4>Appel</h4> <!-- {{ company.name.toUpperCase() }}-->
+        </div>
         <!-- </router-link> -->
+        <p>Informatie over het bedrijf of de producten en dat is dan een stukje wat uitgelicht is en speciaal hiervoor geschreven is of gewoon een stukje van de...</p>
     </div>
 </template>
 
 <script>
     export default {
-        name: "CompanyButton",
-        props: ['linkDetailCompany'],
+        name: "BigCompanyButton",
+        props: ['linkDetailBigCompany'],
         company: {name:'test'}
 
     }
@@ -31,7 +33,7 @@
         margin-bottom: 5vw;
         padding: 4vw 0vw 0vw 4vw!important;
         width: 90vw;
-        height: 24vw;
+        height: 50vw;
         background-color: white;
         border-color: red;
         border-style: solid;
@@ -42,6 +44,9 @@
         }
     }
     p{
+        width: 80vw
+    }
+    h4{
         margin: 2vw 0vw 0vw 4vw;
         float: left;
         text-decoration: none;
@@ -50,5 +55,9 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: -1px;
+    }
+    .block{
+        height: 16vw;
+        width: 80vw;
     }
 </style>

@@ -2,6 +2,7 @@
     <page-wrapper bottom-color="purple">
         <div slot="content">
             <h1>ETEN</h1>
+            <big-company-button/>
             <company-button/>
             <company-button/>
             <company-button/>
@@ -19,10 +20,11 @@
 
 <script>
     import CompanyButton from '../layout/CompanyButton'
+    import BigCompanyButton from '../layout/BigCompanyButton'
     export default {
         components: {
-            ButtonToApp,
-            CompanyButton
+            CompanyButton,
+            BigCompanyButton
         },
         mounted() {
             this.fetchCompany()
