@@ -74,6 +74,11 @@ let routes = [
         }
     },
     {
+        path: '/try',
+        component: Try,
+        name: 'try'
+    },
+    {
         path: '/:category_slug',
         component: Category,
         name: 'category',
@@ -85,18 +90,6 @@ let routes = [
         component: Detail,
         name: 'detail',
         props: true
-    },
-    {
-        path: '/try',
-        component: Try,
-        name: 'try',
-        meta: {
-            title: "Try",
-            metaTags: [
-                { name: "description", content: "De login pagina voor Greenify" },
-                { property: "og:description", content: "De login pagina voor Greenify"}
-            ]
-        }
     }
 ];
 

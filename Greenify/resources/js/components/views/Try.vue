@@ -6,7 +6,6 @@
            
            <button-to-app/>
         </div>
-   
     </page-wrapper>
 </template>
 
