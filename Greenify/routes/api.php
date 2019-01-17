@@ -13,13 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 /**
  * Api routes
  */
-Route::resource('categories','CategoryController')->only(['index','show']);
-Route::resource('companies','CompanyController');
-Route::resource('reviews','ReviewController');
+Route::get('categories/{slug}', 'CategoryController@showBySlug')->name('categories.slug');
+Route::resource('categories', 'CategoryController')->only('index', 'show');
+// Route::resource('companies','CompanyController');
+// Route::resource('reviews','ReviewController');

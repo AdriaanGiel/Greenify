@@ -22,8 +22,8 @@ Route::resource('companies','CompanyController')->only(['index','show']);
 Route::resource('reviews','ReviewController')->only(['index','show']);
 Route::resource('tags','TagController')->only(['index','show']);
 
-Route::get('dashbooard','UserDashboardController@index');
-Route::post('dashbooard','UserDashboardController@update');
+// Route::get('dashbooard','UserDashboardController@index');
+// Route::post('dashbooard','UserDashboardController@update');
 
 
 
