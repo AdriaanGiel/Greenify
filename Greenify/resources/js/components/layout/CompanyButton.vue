@@ -1,10 +1,9 @@
 <template>
     <div class="button">
-        <!-- <router-link :to="{name: 'detail', params: { category_slug: category.name, company_slug: company.name, company: company} }">  -->
+        <router-link :to="{name: 'detail', params: { category_slug: category.name, company_slug: company.name} }"> 
         <img src="smiley.gif" alt="Smiley face">
-        <!-- <a :href='linkDetailCompany'>Company</a> -->
-        <p>Company </p> <!-- {{ company.name.toUpperCase() }} -->
-        <!-- </router-link> -->
+        <p>{{ company.name.toUpperCase() }} </p> 
+        </router-link>
     </div>
 </template>
 
@@ -41,8 +40,8 @@
             box-shadow: 0px 0px #888888;
         }
     }
-    a{
-        margin: 6vw;
+    p{
+        margin: 2vw 0vw 0vw 4vw;
         float: left;
         text-decoration: none;
         color: grey;

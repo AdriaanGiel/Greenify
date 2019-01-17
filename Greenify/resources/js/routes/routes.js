@@ -67,9 +67,10 @@ let routes = [
         props: true
     },
     {
-        path: '/:category_slug/:company-slug',
+        path: '/:category_slug/:company_slug',
         component: Detail,
         name: 'detail',
+        props: true
     },
 ];
 
