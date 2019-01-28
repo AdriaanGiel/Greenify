@@ -2,6 +2,7 @@
     <page-wrapper bottom-color="red">
         <div slot="content">
             <navigation-bar/>
+            <img href="https://geld.planetfem.com/wp-content/uploads/2014/08/blablacar.jpg"/>
             <div class="block">
 
                 <div class="headBlock">
